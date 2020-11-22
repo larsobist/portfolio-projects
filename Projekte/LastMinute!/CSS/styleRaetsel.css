@@ -1,0 +1,66 @@
+/* die Verlinkungen */
+.raetselModalDialog a:link{
+    text-decoration: none;
+    color: white; 
+}
+
+.raetselModalDialog a:visited{
+    color: white; 
+}
+
+/* Inhalte der Rätsel Modal Dialog Box */
+#raetselContent {
+    margin-top: 70px; 
+}
+
+.raetselPopUpMainContent {
+    margin-top: 50px;
+}
+
+.divModalDialog2 #accessDenied {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 240px;  
+}
+
+.raetselModalDialog #tipp {
+    position: absolute; 
+    margin-top: 0px; 
+    margin-left: 120px; 
+}
+
+.divModalDialog2 #accessAvailable{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 170px;  
+}
+
+#dog img{
+    height: 50px; 
+}
+
+/* schwarze transparente Box */
+.raetselModalDialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 210px;
+    width: 880px;
+    height: 580px;
+    /* last attribute set darkness on scale: 0...1.0 */
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    z-index: 101;
+    border: solid 1px Gray;
+    /* rounded corners */
+    border-radius: 20px;
+    visibility: hidden;
+    color: white; 
+}
+
+/* lässt die Modal Dialog Box auf dem Bildschirm erscheinen */
+ .raetselModalDialog:target {
+    display: block;
+}
+

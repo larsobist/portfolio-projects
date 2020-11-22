@@ -1,0 +1,116 @@
+  #field {
+      background: url(../pic/Hintergrund.png);
+  }
+
+  #content {
+      width: 1185px;
+      height: 600px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+  }
+
+  #game {
+      background: white;
+      height: 561px;
+      width: 1161px;
+      padding left: auto;
+  }
+
+  #countdownBar {
+      margin-bottom: 10px;
+      width: 350px;
+      height: 40px;
+      border: 1px dimgray solid;
+      background: dimgray;
+      -webkit-transform-origin: 0 100%;
+      -webkit-transform: rotate(90deg);
+      -moz-transform-origin: 0 100%;
+      -moz-transform: rotate(90deg);
+      -ms-transform-origin: 0 100%;
+      -ms-transform: rotate(90deg);
+      transform-origin: 0 100%;
+      transform: rotate(90deg);
+  }
+
+  #timeLeft {
+      float: left;
+      background: lightgray;
+      height: 40px;
+  }
+
+  #countdown {
+      font-size: 16pt;
+      width: 40px;
+      height: 40px;
+      margin-top: 25px;
+      margin-left: 22px;
+      background: none;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+
+  a:link {
+      text-decoration: none;
+      color: white;
+  }
+
+  a:visited {
+      color: white;
+  }
+
+  #zurueckButton:hover {
+      background: #505050;
+  }
+
+  #zurueckButton:hover {
+      background: #505050;
+  }
+
+  /* aufgabenstellung pop up*/
+  #zurueckButton {
+      position: absolute;
+      top: 352px;
+      left: 468px;
+      margin: 1px 0 0 0;
+      padding-top: 2px;
+      padding-bottom: 0px;
+      cursor: pointer;
+      border: solid 1px gray;
+      width: 150px;
+      height: 30px;
+      border-radius: 4px;
+      z-index: 600;
+
+  }
+
+  /* schwarze transparente Box */
+  .aufgabeModalDialog {
+      position: absolute;
+      margin-top: 30px;  
+      margin-left: 47px; 
+      width: 85%;
+      height: 90%;
+      visibility: visible;
+      /* last attribute set darkness on scale: 0...1.0 */
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      z-index: 600;
+      border: solid 1px gray;
+      /* rounded corners */
+      border-radius: 10px;
+  }
+
+  .aufgabeModalDialog:target {
+      display: block;
+  }
+
+  .aufgabePopUpMainContent {
+      margin-top: 200px;
+      margin: 160px 150px 150px 150px;
+  }

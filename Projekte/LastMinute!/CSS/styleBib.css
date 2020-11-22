@@ -1,0 +1,225 @@
+#menue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1160px;
+}
+
+#tischL {
+    top: 0;
+    left: 0;
+    margin-top: 300px;
+    margin-left: 20px;
+    float: left;
+    position: absolute;
+    z-index: 100;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#tischR {
+    top: 0;
+    left: 0;
+    margin-top: 300px;
+    margin-left: 600px;
+    float: right;
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    z-index: 101;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+#keineTaschentuecherButton {
+    position: absolute;
+    left: 24px;
+    margin: 1px 0 0 0;
+    padding-top: 3px;
+    padding-bottom: 0px;
+    cursor: pointer;
+    border: solid 1px gray;
+    width: 230px;
+    height: 20px;
+    border-radius: 4px;
+    z-index: 102;
+}
+
+.divModalDialog4 a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.divModalDialog4 a:visited {
+    color: white;
+}
+
+.tischLPopUpMainContent {
+    padding: 5px;
+}
+
+.divModalDialog4 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 132.5px;
+    margin-left: 85px;
+    width: 1000px;
+    height: 335px;
+    visibility: hidden;
+    /* last attribute set darkness on scale: 0...1.0 */
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 200;
+    border: solid 1px Gray;
+    /* rounded corners */
+    border-radius: 10px;
+}
+
+.divModalDialog4:target {
+    display: block;
+}
+
+
+.divModalDialog5 a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.divModalDialog5 a:visited {
+    color: white;
+}
+
+.tischRPopUpMainContent {
+    margin-top: 35px;
+}
+
+.divModalDialog5 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 390px;
+    width: 500px;
+    height: 450px;
+    visibility: hidden;
+    /* last attribute set darkness on scale: 0...1.0 */
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 201;
+    border: solid 1px gray;
+    /* rounded corners */
+    border-radius: 10px;
+}
+
+.divModalDialog5:target {
+    display: block;
+}
+
+
+.gameOverButton {
+    padding: 20px;
+    border: solid 1px Gray;
+    border-radius: 2px;
+    margin-top: 20px;
+    font-size: 20px;
+    background: transparent; 
+    padding-top: 3px; 
+    padding-bottom: 0px; 
+    cursor: pointer; 
+    border: solid 1px gray;
+    height: 50px;  
+    border-radius: 4px; 
+    z-index: 102;
+    color: white; 
+    font-family: Lucida Sans Typewriter;
+}
+
+.gameOverButton:hover{
+    background-color: darkgray; 
+}
+
+/*----------------------------------Linker Tisch----------------------------*/
+
+h1{
+    color: white;
+    margin-top: 50px;
+    font-size: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 120%;
+}
+
+.element{
+    padding: 5px;
+    margin: 10px;
+}
+
+/*-------------------------Rechter Tisch--------------------------------*/
+
+#batteryGif{
+    width: 200px;
+    height: auto;
+    padding: 10px;
+}
+
+/*AUFGABENSTELLUNG*/
+
+
+a:link{
+    text-decoration: none;
+    color: white; 
+}
+
+a:visited{
+    color: white; 
+}
+
+  #zurueckButton:hover {
+      background: #505050;
+  }
+
+  /* aufgabenstellung pop up*/
+  #zurueckButton {
+      position: absolute;
+      top: 350px;
+      left: 465px;
+      margin: 1px 0 0 0;
+      padding-top: 2px;
+      padding-bottom: 0px;
+      cursor: pointer;
+      border: solid 1px gray;
+      width: 150px;
+      height: 30px;
+      border-radius: 4px;
+      z-index: 600;
+  }
+
+  /* schwarze transparente Box */
+  .aufgabeModalDialog {
+      position: absolute;
+      margin-top: 28px;  
+      margin-left: 45px; 
+      width: 85%;
+      height: 90%;
+      visibility: visible;
+      /* last attribute set darkness on scale: 0...1.0 */
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      z-index: 600;
+      border: solid 1px gray;
+      /* rounded corners */
+      border-radius: 10px;
+  }
+
+  .aufgabeModalDialog:target {
+      display: block;
+  }
+
+  .aufgabePopUpMainContent {
+      margin: 200px; 
+  }
+

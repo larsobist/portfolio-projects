@@ -1,0 +1,132 @@
+#bahnGif{
+    padding-left: 200px;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    /* last attribute set darkness on scale: 0...1.0 */
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 101;
+}
+/* 'Ziel-Attribut' führt den ModalDialog aus (zeigt das Menü auf dem Bildschirm an) */
+.modal:target {
+    display: block;
+}
+
+.divModalDialog5 a:link{
+    text-decoration: none;
+    color: white; 
+}
+
+.divModalDialog5 a:visited{
+    color: white; 
+}
+
+.divModalDialog5{
+    position: fixed;
+    margin-top: 170px;
+    margin-left: 250px;
+    width: 650px;
+    height: 250px;
+    visibility: hidden;
+    /* last attribute set darkness on scale: 0...1.0 */
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    z-index: 101;
+    border: solid 1px Gray;
+    /* rounded corners */
+    border-radius: 10px;
+    line-height: 40px; 
+}
+
+.divModalDialog5:target {
+    display: block;
+}
+
+#gameOverButton:hover {
+      background: #505050;
+  }
+
+#gameOverButton {
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    margin: 1px 0 0 0;
+    font-size: 20px; 
+    padding-top: 2px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    border: solid 1px gray;
+    height: 30px;
+    border-radius: 4px;
+    z-index: 600;
+    background-color: transparent; 
+    color: white; 
+    font-family: Lucida Sans Typewriter;
+}
+
+h1{
+    color: white;
+    margin-top: 80px;
+    font-size: 40px;
+}
+
+/*Laptop vergessen?*/
+
+a:link{
+    text-decoration: none;
+    color: white; 
+}
+
+a:visited{
+    color: white; 
+}
+
+  #zurueckButton:hover {
+      background: #505050;
+  }
+
+  /* aufgabenstellung pop up*/
+  #zurueckButton {
+      position: absolute;
+      top: 175px;
+      left: 75px;
+      padding-top: 5px;
+      margin: 1px 0 0 0;
+      cursor: pointer;
+      border: solid 1px gray;
+      width: 350px;
+      height: 30px;
+      border-radius: 4px;
+  }
+
+  /* schwarze transparente Box */
+  .aufgabeModalDialog {
+      position: absolute;
+      margin-top: 200px;  
+      margin-left: 420px; 
+      width: 500px;
+      height: 250px;
+      visibility: hidden;
+      /* last attribute set darkness on scale: 0...1.0 */
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      border: solid 1px gray;
+      /* rounded corners */
+      border-radius: 10px;
+  }
+
+  .aufgabeModalDialog:target {
+      display: block;
+  }
+
+  .aufgabePopUpMainContent {
+      margin: 40px; 
+  }
+

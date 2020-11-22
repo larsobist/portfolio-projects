@@ -1,0 +1,352 @@
+body {
+    overflow: hidden;
+    font-family: Lucida Sans Typewriter;
+    line-height: 170%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#field {
+    background: white;
+    width: 1280px;
+    height: 600px;
+    background-size: 1280px 600px;
+    position: absolute;
+}
+
+#content {
+    float: left;
+    background: transparent;
+    width: 1170px;
+    height: 600px;
+    position: absolute;
+}
+
+#home {
+    background: white;
+    width: 85px;
+    height: 90px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 15px black;
+}
+
+#inventar {
+    height: 430px;
+    width: 45px;
+    background: white;
+    margin-bottom: 25px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 10px 5px 15px black;
+}
+
+#inventar img {
+    height: 100%;
+}
+
+#menue {
+    float: right;
+    margin-right: 15px;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 501;
+}
+
+.arrow span {
+    margin: -10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+
+}
+
+.items {
+    /*    border: 1px solid black;*/
+    height: 50px;
+    width: 50px;
+    margin-top: 3px;
+    margin-bottom: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    display: block;
+}
+
+.gameOverModalDialog ul a:hover {
+    background: #505050;
+}
+
+/* pop-up ads */
+.gameOverPopupAd {
+    position: absolute;
+    z-index: 810;
+    height: 100px;
+}
+
+/* "Menü-Box" wird auf dem Bildschirm zentriert angezeigt */
+.gameOverPopUpMainContent {
+    margin-top: 13%;
+}
+
+/* pop-up div 'dunkle durchsichtige Box' auf dem ganzen Bildschirm */
+.gameOverModalDialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    /* last attribute set darkness on scale: 0...1.0 */
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 801;
+}
+
+/* 'Ziel-Attribut' führt den ModalDialog aus (zeigt das Menü auf dem Bildschirm an) */
+.gameOverModalDialog:target {
+    display: block;
+}
+
+/* zentriert das Menü im ganzen Bildschirm (Position des Menüs) */
+.gameOverModalDialog div {
+    /* either absolute or fixed */
+    position: fixed;
+    top: 5%;
+    width: 100%;
+    height: 80%;
+    /* rounded corners */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 802;
+}
+
+/* pop-up image (wie das MenueButtonBild angezeigt wird) */
+.gameOverModalDialog img {
+    padding: 5px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 805;
+    background: none;
+}
+
+
+
+/* Buttons im Menü untereinander */
+.gameOverModalDialog ul li {
+    display: grid;
+}
+
+ul {
+    padding: 0px;
+}
+
+/* Text Buttons */
+.gameOverModalDialog ul a {
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: lightgray;
+    text-decoration: none;
+    border: solid 1px Gray;
+    /* rounded corners */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 4px;
+    z-index: 110;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.gameOverPopUpMainContent {
+    margin-top: 15%;
+}
+
+/* mein Button für 'Pause'*/
+#pauseButton {
+    position: relative;
+    margin: 1px 0 0 0;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+/* das Bild für meinen 'Pause'-Button */
+#pauseButton img {
+    padding: 10px;
+    height: 45px;
+    border: solid 1px gray;
+    /* gerundete Ecken */
+    -moz-border-radius: 10px;
+    /*Bedeutung von '-moz- nachgucken*/
+    -webkit-border-radius: 10px;
+    /*Bedeutung von '-webkit-' ".."*/
+    border-radius: 10px;
+    /* Schatten hinzufügen */
+    -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    /* z-index ist die Überlagerung der einzelnen Blöcke über einander */
+    cursor: pointer;
+}
+
+/* wenn Maus über dem Button liegt */
+#pauseButton img:hover,
+.divModalDialog ul a:hover,
+.divModalDialog img:hover {
+    background: #505050;
+    /*background: -moz-linear-gradient(top, #eaeaea, #505050 50%, #303030 50%, #404040); 
+    background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), color-stop(0.5, #505050), color-stop(0.5, #303030), to(#404040));*/
+}
+
+/* pop-up ads */
+.divPopupAd {
+    position: absolute;
+    z-index: 110;
+    height: 100px;
+}
+
+/* "Menü-Box" wird auf dem Bildschirm zentriert angezeigt */
+.divPopUpMainContent {
+    margin-top: 13%;
+}
+
+/* pop-up div 'dunkle durchsichtige Box' auf dem ganzen Bildschirm */
+.divModalDialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    /* last attribute set darkness on scale: 0...1.0 */
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 800;
+}
+
+/* 'Ziel-Attribut' führt den ModalDialog aus (zeigt das Menü auf dem Bildschirm an) */
+.divModalDialog:target {
+    display: block;
+}
+
+/* zentriert das Menü im ganzen Bildschirm (Position des Menüs) */
+.divModalDialog div {
+    /* either absolute or fixed */
+    position: fixed;
+    top: 5%;
+    width: 100%;
+    height: 80%;
+    /* rounded corners */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 102;
+}
+
+/* pop-up image (wie das MenueButtonBild angezeigt wird) */
+.divModalDialog img {
+    padding: 5px;
+    height: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 105;
+    border: solid 1px gray;
+    cursor: pointer;
+    /* rounded corners */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 4px;
+
+}
+
+/* Buttons im Menü untereinander */
+.divModalDialog ul li {
+    display: grid;
+}
+
+ul {
+    padding: 0px;
+}
+
+/* Text Buttons */
+.divModalDialog ul a {
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: lightgray;
+    text-decoration: none;
+    border: solid 1px Gray;
+    /* rounded corners */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 4px;
+    z-index: 110;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.popUpPopUpMainContent {
+    margin-top: 115px;
+}
+
+
+.popUpModalDialog:target {
+    display: block;
+}

@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <!--Für Icon im Browser-->
+    <link rel="apple-touch-icon" sizes="180x180" href="pic/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pic/favicon-16x16.png">
+    <link rel="manifest" href="pic/site.webmanifest">
+    <link rel="mask-icon" href="pic/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="utf-8">
+    <title>Last Minute!</title>
+
+    <!--CSS Elemente-->
+    <link rel="stylesheet" href="CSS/styleBahn.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!--Javascript Elemente-->
+    <script src="JS/scriptBahn.js"></script>
+    <script src="JS/storage.js"></script>
+
+</head>
+
+<body onload="loadInventar(); aufgabe()">
+    <!--Nächste Seite Pfeile-->
+    <div class="arrow" id="nextLevel" style="display: none">
+        <a href="drucker.html">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+
+    <div id="main">
+        <!--Game Over Dialog-->
+        <div style="text-align: center;">
+            <div class="gameOverModalDialog" id="gameOverModalDialog">
+                <div class="gameOverPopUpMainContent">
+                    <h1>
+                        <font color="white">GAME OVER</font>
+                    </h1>
+                    <ul>
+                        <li><a href="index.html">NEUES SPIEL</a></li>
+                        <li><a href="credit.html">SPIEL BEENDEN</a></li>
+                        <li><img id="bild" src="Pic/Stressed.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="field">
+            <img id="uni" src="Pic/Bahn/uni.jpg" style="display: none">
+
+            <div id="content">
+                <!--Spiel-->
+                <div id="ticketModalDialog5" class="divModalDialog5">
+                    <div class="ticketPopUpMainContent">
+                        <h1 id="schaffner">Ticket bitte!</h1>
+                        <button id="gameOverButton" onclick="gameOver()">Ich habe meins vergessen</button>
+                    </div>
+                </div>
+                <img id="bahnGif" alt="bahngif" src="Pic/Bahn/ticket.gif">
+            </div>
+
+            <div id="menue">
+                <div id="home">
+                    <!-- Pause -->
+                    <div style="text-align:center;">
+                        <div id="pauseButton">
+                            <a href="#homeModalDialog" title="Menü"><img src="pic/pauseIcon.png" alt="Pause" /></a>
+                        </div>
+                        <div id="homeModalDialog" class="divModalDialog">
+                            <div class="divPopUpMainContent">
+                                <h1>
+                                    <font color="white">PAUSIERT</font>
+                                </h1>
+                                <ul>
+                                    <li><a href="#">ZURÜCK ZUM SPIEL</a></li>
+                                    <li><a href="index.html">NEUES SPIEL</a></li>
+                                    <li><a href="credit.html">SPIEL BEENDEN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Inventar-->
+                <div id="inventar">
+                    <div id="1item" class="items"></div>
+                    <div id="2item" class="items"></div>
+                    <div id="3item" class="items"></div>
+                    <div id="4item" class="items"></div>
+                    <div id="5item" class="items"></div>
+                    <div id="6item" class="items"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

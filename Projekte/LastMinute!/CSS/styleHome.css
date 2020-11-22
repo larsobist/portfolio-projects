@@ -1,0 +1,167 @@
+#inventar img{width: 100%}
+
+#place1{
+    position: absolute;
+    top: 113px;
+    left: 410px;
+    width: 100px;
+    height: 55px;
+}
+#place2{
+    position: absolute;
+    top: 140px;
+    left: 550px;
+    width: 50px;
+    height: 35px;
+}
+#place3{
+    position: absolute;
+    top: 285px;
+    left: 180px;
+    width: 70px;
+    height: 35px;
+}
+#place4{
+    position: absolute;
+    top: 245px;
+    left: 270px;
+    width: 140px;
+    height: 95px;
+}
+#place5{
+    position: absolute;
+    top: 183px;
+    left: 530px;
+    width: 50px;
+    height: 75px;
+}
+#place6{
+    position: absolute;
+    top: 285px;
+    left: 530px;
+    width: 50px;
+    height: 35px;
+}
+#place7{
+    position: absolute;
+    top: 295px;
+    left: 550px;
+    width: 30px;
+    height: 35px;
+}
+#place8{
+    position: absolute;
+    top: 455px;
+    left: 290px;
+    width: 100px;
+    height: 90px;
+}
+#place9{
+    position: absolute;
+    top: 375px;
+    left: 430px;
+    width: 100px;
+    height: 35px;
+}
+#place10{
+    position: absolute;
+    top: 475px;
+    left: 550px;
+    width: 100px;
+    height: 55px;
+}
+#place11{
+    position: absolute;
+    top: 435px;
+    left: 690px;
+    width: 100px;
+    height: 55px;
+}
+#place12{
+    position: absolute;
+    top: 255px;
+    left: 797px;
+    width: 100px;
+    height: 95px;
+}
+#place13{
+    position: absolute;
+    top: 330px;
+    left: 905px;
+    width: 50px;
+    height: 55px;
+}
+#place14{
+    position: absolute;
+    top: 520px;
+    left: 730px;
+    width: 100px;
+    height: 55px;
+}
+
+.room:hover {
+  transform: scale(1.5); 
+/*    150% zoom */
+}
+
+.items{
+    height: 50px;width: 50px;
+    margin-top: 3px;
+    margin-bottom: 17px; 
+    }
+
+/*  Aufgaben Dialog  */
+
+a:link{
+    text-decoration: none;
+    color: white; 
+}
+
+a:visited{
+    color: white; 
+}
+
+#zurueckButton:hover {
+      background: #505050;
+  }
+
+  /* aufgabenstellung pop up*/
+  #zurueckButton {
+      position: absolute;
+      top: 320px;
+      left: 470px;
+      margin: 1px 0 0 0;
+      padding-top: 2px;
+      padding-bottom: 0px;
+      cursor: pointer;
+      border: solid 1px gray;
+      width: 150px;
+      height: 30px;
+      border-radius: 4px;
+      z-index: 600;
+  }
+
+  /* schwarze transparente Box */
+  .aufgabeModalDialog {
+      position: absolute;
+      margin-top: 75px;  
+      margin-left: 60px; 
+      width: 85%;
+      height: 80%;
+      visibility: visible;
+      /* last attribute set darkness on scale: 0...1.0 */
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      z-index: 600;
+      border: solid 1px gray;
+      /* rounded corners */
+      border-radius: 10px;
+  }
+
+  .aufgabeModalDialog:target {
+      display: block;
+  }
+
+  .aufgabePopUpMainContent {
+      margin: 130px;
+  }

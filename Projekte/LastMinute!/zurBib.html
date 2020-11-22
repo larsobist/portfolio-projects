@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <!--Für Icon im Browser-->
+    <link rel="apple-touch-icon" sizes="180x180" href="pic/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pic/favicon-16x16.png">
+    <link rel="manifest" href="pic/site.webmanifest">
+    <link rel="mask-icon" href="pic/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="utf-8">
+    <title>Last Minute!</title>
+    <link rel="stylesheet" href="CSS/styleBahn.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/scriptBzB.js"></script>
+    <script src="JS/storage.js"></script>
+
+</head>
+
+<body onload="aufgabe(), loadInventar()">
+
+    <div id="main">
+        <div id="field">
+            <div id="content">
+                <!--Spiel-->
+                <div id="aufgabeModalDialog" class="aufgabeModalDialog" style="color: white">
+                    <div class="aufgabePopUpMainContent">
+                        <div id="aufgabenText">Jetzt bin ich fast bei der Bibliothek angekommen und plötzlich bin ich mir nicht mehr sicher, ob ich meinen Laptop überhaubt eingepackt habe... </div>
+                    </div>
+                    <div id="zurueckButton" onclick="falscheEingabe()"><a href="#">Oh nein, ich habe ihn vergessen!</a></div>
+                </div>
+                <img id="bahnGif" alt="bahngif" src="Pic/Bahn/bahn.gif">
+            </div>
+            <div id="menue">
+                <div id="home">
+                    <!-- Pause -->
+                    <div style="text-align:center;">
+                        <div id="pauseButton" onclick="pause()">
+                            <a href="#homeModalDialog" title="Menü"><img src="pic/pauseIcon.png" alt="Pause" /></a>
+                        </div>
+                        <div id="homeModalDialog" class="divModalDialog">
+                            <div class="divPopUpMainContent">
+                                <h1>
+                                    <font color="white">PAUSIERT</font>
+                                </h1>
+                                <ul>
+                                    <li><a href="#" id="zurueckZumSpiel" onclick="resume()">ZURÜCK ZUM SPIEL</a></li>
+                                    <li><a href="index.html">NEUES SPIEL</a></li>
+                                    <li><a href="credit.html">SPIEL BEENDEN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Inventar-->
+                <div id="inventar">
+                    <div id="1item" class="items"></div>
+                    <div id="2item" class="items"></div>
+                    <div id="3item" class="items"></div>
+                    <div id="4item" class="items"></div>
+                    <div id="5item" class="items"></div>
+                    <div id="6item" class="items"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

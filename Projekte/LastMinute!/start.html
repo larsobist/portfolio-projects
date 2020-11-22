@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <!--Für Icon im Browser-->
+    <link rel="apple-touch-icon" sizes="180x180" href="pic/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pic/favicon-16x16.png">
+    <link rel="manifest" href="pic/site.webmanifest">
+    <link rel="mask-icon" href="pic/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="utf-8">
+    <title>Last Minute!</title>
+
+    <!--CSS Elemente-->
+    <link rel="stylesheet" href="CSS/styleStartEnde.css">
+    <style>
+        .arrow span {
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Nächste Seite Pfeile-->
+    <div class="arrow">
+        <a href="home.html">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+    <div id="box2">
+
+        <div id="text">
+            <div id="textInhalt">
+                <script>
+                    var i = 0;
+                    var txt = ' Hallo, ich bin BWL-Student in Bremen. Heute ist der 21. Januar 2019, der Tag, an dem ich meine Bachelorarbeit abgeben muss. Eigentlich hatte ich geplant meine Arbeit vor Weihnachten fertig zu kriegen, jedoch wie es meistens ist, war ich zu Anfang nicht so motiviert und habe es auf die leichte Schulter genommen.    .   .                  Als mich mein Betreuer Mitte November gefragt hatte, wie weit ich denn sei, realisierte ich dass es Zeit ist zu beginnen. Die Recherche nahm jedoch mehr Zeit ein als geplant und so musste ich über die Weihnachtsferien hart arbeiten. Heute muss ich den letzten Feinschliff an meiner Bachelorarbeit machen, bevor ich sie heute um 18:00 Uhr beim Prüfungsamt abgegeben haben muss!';
+                    var speed = 20; //millisekunde
+
+                    function typeWriter() {
+                        if (i < txt.length) {
+                            document.getElementById("textInhalt").innerHTML += txt.charAt(i);
+                            i++;
+                            setTimeout(typeWriter, speed);
+                        }
+                    }
+                    typeWriter();
+
+                </script>
+            </div>
+            <img id="bildStart" src="pic/Stressed.png">
+        </div>
+    </div>
+</body>

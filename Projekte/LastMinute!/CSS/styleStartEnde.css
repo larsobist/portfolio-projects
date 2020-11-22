@@ -1,0 +1,244 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: black;
+    overflow: hidden;
+    font-family: Lucida Sans Typewriter;
+    line-height: 170%;
+}
+#box{
+	height: 100%;
+    width: 100%;
+	background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box2{
+	height: 100%;
+    width: 100%;
+	background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text{
+    background-color: white;
+    height: 600px;
+    width: 1280px;
+    padding: 5%;
+
+    }
+#textInhalt{
+    background: white;
+    font-size: 20px;
+    height: 200px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#bildStart {
+    width: 200px;
+    height: auto;
+    margin-top: 110px;
+    margin-left: 540px;
+    margin-right: 540px;
+}
+
+#bildEnde {
+    width: 250px;
+    height: auto;
+    margin-top: 120px;
+    margin-left: 510px;
+    margin-right: 540px;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-bottom: 5px solid white;
+    overflow: hidden;
+    box-shadow: 0px 1px 0px rgba(0,0,0,.5);
+    animation: reveal 2s linear forwards;
+   
+}
+.title h1{
+    margin: 10px;
+    padding: 0px;
+    color: white;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    text-transform: uppercase;
+}
+
+.titleEnde{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-bottom: 5px solid white;
+    overflow: hidden;
+    box-shadow: 0px 1px 0px rgba(0,0,0,.5);
+    animation: revealEnde 2s linear forwards;
+    cursor: default;
+}
+.titleEnde h1{
+    margin: 10px;
+    padding: 0px;
+    color: white;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    text-transform: uppercase;
+
+}
+
+.titleEnde h2{
+    margin-top: 40px;
+    padding: 0px;
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    text-transform: uppercase;
+}
+
+.titleEnde h3{
+    margin-bottom: 5px;
+    padding: 0px;
+    color: white;
+    font-size: 1.7em;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    text-transform: uppercase;
+}
+
+
+@keyframes reveal {
+    0%
+    {
+        width: 0px;
+        height: 0px;
+    }
+    30%
+    {
+        width: 500px;
+        height: 0px;
+        box-shadow: 0px 1px 0px rgba(0,0,0,.5);
+    }
+    60%
+    {
+        width: 500px;
+        height: 80px;
+    }
+    80%
+    {
+        width: 500px;
+        height: 120px;
+        box-shadow: 0px 1px 0px rgba(0,0,0,.5);
+    }
+    100%
+    {
+        width: 500px;
+        height: 120px;
+        box-shadow: 0px 5px 0px rgba(0,0,0,.5);
+    }
+    
+}
+
+@keyframes revealEnde {
+    0%
+    {
+        width: 0px;
+        height: 0px;
+    }
+    40%
+    {
+        width: 500px;
+        height: 0px;
+    }
+    50%
+    {
+        width: 500px;
+        height: 50px;
+    }
+    100%
+    {
+        width: 500px;
+        height: 350px;
+        box-shadow: 0px 5px 0px rgba(0,0,0,.5);
+    }
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.arrow span {
+    margin: -10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%
+    {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+
+    50%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+    
+}
+#neuesSpiel a{
+    opacity: 0.3;
+}
+#neuesSpiel a:hover{
+    font-size: 1em;
+    opacity: 1;
+}
+
+#neuesSpiel a:link{
+    text-decoration: none;
+    color: white; 
+    margin: 6px;
+}
+
+#neuesSpiel a:visited{
+    color: white; 
+    opacity: 0.3;
+}
+
+#neuesSpiel {
+    height: 50px;
+    width: 500px;
+    margin-top: 480px;
+    margin-left: 10px;
+    padding: 5px;
+}

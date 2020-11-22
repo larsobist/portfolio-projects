@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <!--Für Icon im Browser-->
+    <link rel="apple-touch-icon" sizes="180x180" href="pic/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pic/favicon-16x16.png">
+    <link rel="manifest" href="pic/site.webmanifest">
+    <link rel="mask-icon" href="pic/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="utf-8">
+    <title>Last Minute!</title>
+
+    <!--CSS Elemente-->
+    <link rel="stylesheet" href="CSS/styleHome.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/styleWorm.css">
+
+    <!--Javascript Elemente-->
+    <script type="text/javascript" src="JS/scriptHome.js"> </script>
+    <script type="text/javascript" src="JS/storage.js"> </script>
+    <script type="text/javascript" src="JS/scriptWorm.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.js"></script>
+
+
+</head>
+
+<body onload="inventarReset()">
+    <!--Nächste Seite Pfeile-->
+    <div class="arrow" id="arrow" style="visibility: hidden">
+        <a href="zurBib.html">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+
+    <div id="main">
+        <!--Spiel-->
+        <div id="wormModalDialog" style="color: white">
+            <div id="wormPopUpMainContent">
+
+                <h2 id="text">Mein Bücherwurm hat Hunger! Ich habe durch den Stress vergessen ihn die letzten Tage zu füttern. Jetzt muss er essen fangen bis er satt ist! Steuerung mit WSAD oder den Pfeiltasten. </h2>
+                <div id="feld">
+
+                    <div id="game"></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="field" style="background-image: url(pic/home/HomeRoom_noElements.jpg)""background-size: cover" "background-size:auto">
+            <div id="aufgabeModalDialog" class="aufgabeModalDialog" style="color: white">
+                <div class="aufgabePopUpMainContent">
+                    <h1>Aufgabenstellung</h1>
+                    Ich fahre heute in die Bibliothek und packe gerade meine Tasche für den Tag. <br>
+                    Was soll ich alles mitnehmen? <br> Da mir Ordnung sehr wichtig ist, packe ich Gegenstände, die ich doch nicht brauche an ihren ursprünglichen Platz zurück. <br>
+                    Zieh die Items rechts in die Tasche.
+
+                </div>
+                <div id="zurueckButton" onclick="closeAufgabeModal()">Start</div>
+            </div>
+
+            <div class="content">
+                <div id="place1" class="room" ondrop="drop(event);" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img value="booksL" class="images" alt="booksL" src="pic/Home/HomeRoom_booksL.png" id="drag1" draggable="true" ondragstart="drag(event)" title="Buch">
+                </div>
+
+                <div id="place2" class="room" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img value="booksR" class="images" alt="booksR" src="pic/Home/HomeRoom_booksR.png" id="drag2" draggable="true" title="Buch" ondragstart="drag(event)">
+                </div>
+
+                <div id="place3" class="room">
+                    <img value="buch" class="images" title="Buch" alt="buch" src="pic/Home/HomeRoom_Buch.png" ondragstart="wormPopUp(); this.ondragstart = null">
+                </div>
+
+                <div id="place14" class="room" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img value="bottle" class="images" alt="bottle" src="pic/Home/HomeRoom_bottle.png" id="drag4" draggable="true" title="Flasche" ondragstart="drag(event)" style="width: 100%;">
+                </div>
+
+                <div id="place4" class="room" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img value="laptop" class="images" alt="laptop" src="pic/Home/HomeRoom_laptop.png" id="drag5" draggable="true" title="Laptop" ondragstart="drag(event)">
+                </div>
+
+                <div id="place5" class="room">
+                    <img value="flower" class="images" alt="flower" src="pic/Home/HomeRoom_flower.png">
+                </div>
+
+                <div id="place6" class="room" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img value="musicbox" class="images" alt="musicbox" src="pic/Home/HomeRoom_musicBox.png" id="drag7" draggable="true" title="Musikbox" ondragstart="drag(event)">
+                </div>
+
+                <div id="place7" class="room" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img value="tuch" alt="tuch" class="images" src="pic/Home/HomeRoom_taschent%C3%BCcher.png" id="drag8" draggable="true" title="Taschentuch" ondragstart="drag(event)">
+                </div>
+
+                <div id="place8" class="room" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img value="kabel" class="images" alt="kabel" src="pic/Home/HomeRoom_kabel.png" id="drag9" draggable="true" title="Kabel" ondragstart="drag(event)">
+                </div>
+
+                <div id="place9" class="room" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img value="ticket" class="images" alt="ticket" src="pic/Home/HomeRoom_semesterticket.png" id="drag10" draggable="true" ondragstart="drag(event)" title="Ticket">
+                </div>
+
+                <div id="place10" class="room" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img value="money" class="images" alt="money" src="pic/Home/HomeRoom_money.png" id="drag11" draggable="true" ondragstart="drag(event)" title="Geld">
+                </div>
+
+                <div id="place11" class="room" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img value="phone" class="images" alt="phone" src="pic/Home/HomeRoom_phone.png" id="drag12" draggable="true" ondragstart="drag(event)" title="Handy">
+                </div>
+
+                <div id="place12" class="room" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img value="teddy" class="images" alt="teddy" src="pic/Home/HomeRoom_teddy.png" id="drag13" draggable="true" ondragstart="drag(event)" title="Teddy">
+                </div>
+
+                <div id="place13" class="room" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img value="keys" class="images" alt="keys" src="pic/Home/HomeRoom_keys.png" id="drag14" draggable="true" ondragstart="drag(event)" title="Schlüssel">
+                </div>
+            </div>
+
+            <div id="menue">
+                <div id="home">
+                    <!-- Pause -->
+                    <div style="text-align:center;">
+                        <div id="pauseButton" onclick="pause()">
+                            <a href="#homeModalDialog" title="Menü"><img src="pic/pauseIcon.png" alt="Pause" /></a>
+                        </div>
+                        <div id="homeModalDialog" class="divModalDialog">
+                            <div class="divPopUpMainContent">
+                                <h1>
+                                    <font color="white">PAUSIERT</font>
+                                </h1>
+                                <ul>
+                                    <li><a href="#" id="zurueckZumSpiel" onclick="resume()">ZURÜCK ZUM SPIEL</a></li>
+                                    <li><a href="index.html">NEUES SPIEL</a></li>
+                                    <li><a href="credit.html">SPIEL BEENDEN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="inventar">
+                    <div id="1item" class="items" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragleave(event)"></div>
+                    <div id="2item" class="items" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragleave(event)"></div>
+                    <div id="3item" class="items" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragleave(event)"></div>
+                    <div id="4item" class="items" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragleave(event)"></div>
+                    <div id="5item" class="items" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragleave(event)"></div>
+                    <div id="6item" class="items" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragleave(event)" style="margin-bottom: 5px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="gameOverModalDialog" id="gameOverModalDialog">
+            <!--Game Over Dialog-->
+            <div class="gameOverPopUpMainContent">
+                <h1>
+                    <font color="white">GAME OVER</font>
+                </h1>
+                <ul>
+                    <li><a href="index.html">NEUES SPIEL</a></li>
+                    <li><a href="credit.html">SPIEL BEENDEN</a></li>
+                    <li><img id="bild" src="Pic/Stressed.png"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

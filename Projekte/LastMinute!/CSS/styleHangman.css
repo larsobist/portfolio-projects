@@ -1,0 +1,233 @@
+/*---------------------MODAL DIALOG--------------------*/
+
+.divModalDialog3 a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.divModalDialog3 a:visited {
+    color: white;
+}
+
+.divgmPopUpMainContent {
+    /*    margin-top: 20px;*/
+}
+
+/* schwarze transparente Box */
+.divModalDialog3 {
+    position: absolute;
+    visibility: hidden;
+    width: 660px;
+    height: 610px;
+    /* last attribute set darkness on scale: 0...1.0 */
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 500;
+    border: solid 1px Gray;
+    /* rounded corners */
+    border-radius: 8px;
+}
+
+.divModalDialog3:target {
+    display: block;
+}
+
+/*-----------------------HANGMAN---------------------*/
+
+#rateWort {
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 130px;
+    font-size: 20px;
+}
+
+#aufgabe{
+    color: white;
+    height: 65px;
+    padding: 10px;
+}
+
+#versuche {
+    color: black;
+    font-size: 12px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#letter0,
+#letter1,
+#letter2,
+#letter3,
+#letter4,
+#letter5,
+#letter6,
+#letter7,
+#letter8,
+#letter9,
+#letter10,
+#letter11,
+#letter12,
+#letter13,
+#letter14,
+#letter15,
+#letter16,
+#letter17,
+#letter18,
+#letter19,
+#letter20,
+#letter21,
+#letter22,
+#letter23,
+#letter24,
+#letter25,
+#letter26,
+#letter27,
+#letter28,
+#letter29,
+#letter30,
+#letter31,
+#letter32,
+#letter33,
+#letter34,
+#letter35,
+#letter36,
+#letter37,
+#letter38,
+#letter39,
+#letter40 {
+    width: 30px;
+    padding: 3px;
+    color: white;
+    text-align: center;
+    float: left;
+}
+
+
+#hangman {
+    border: 2px solid;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin-left: 180px;
+    margin-top: 30px
+}
+
+#antwort {
+    position: absolute;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 13px; 
+    
+}
+
+h2 {
+    font-size: 25px;
+    color: white;
+    margin-top: 22px;
+}
+
+.alphabet {
+    font-weight: bold;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    border: black solid 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#GM1 {
+    visibility: hidden;
+    height: 250px;
+    width: auto;
+    z-index: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#GM2 {
+    visibility: hidden;
+    height: 250px;
+    width: auto;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#GM3 {
+    visibility: hidden;
+    height: 250px;
+    width: auto;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#GM4 {
+    visibility: hidden;
+    height: 250px;
+    width: auto;
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#GM5 {
+    visibility: hidden;
+    height: 250px;
+    width: auto;
+    z-index: 4;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#GM6 {
+    visibility: hidden;
+    height: 250px;
+    width: auto;
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#GM7 {
+    visibility: hidden;
+    height: 250px;
+    width: auto;
+    z-index: 6;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}

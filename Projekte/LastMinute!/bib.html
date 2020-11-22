@@ -1,0 +1,233 @@
+<html>
+
+<head>
+    <!--Für Icon im Browser-->
+    <link rel="apple-touch-icon" sizes="180x180" href="pic/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pic/favicon-16x16.png">
+    <link rel="manifest" href="pic/site.webmanifest">
+    <link rel="mask-icon" href="pic/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="utf-8">
+    <title>Last Minute!</title>
+
+    <!--CSS Elemente-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/styleBib.css">
+    <link rel="stylesheet" href="CSS/styleRaetsel.css">
+    <link rel="stylesheet" href="CSS/styleHangman.css">
+
+    <!--Javascript Elemente-->
+    <script src="JS/scriptBib.js"></script>
+    <script src="JS/scriptRaetsel.js"></script>
+    <script src="JS/scriptHangman.js"></script>
+    <script src="JS/storage.js"></script>
+</head>
+
+<body onload="loadInventar()">
+    <div id="main">
+        <!--Game Over Dialog-->
+        <div style="text-align: center;">
+            <div class="gameOverModalDialog" id="gameOverModalDialog">
+                <div class="gameOverPopUpMainContent">
+                    <h1>
+                        <font color="white">GAME OVER</font>
+                    </h1>
+                    <ul>
+                        <li><a href="index.html">NEUES SPIEL</a></li>
+                        <li><a href="credit.html">SPIEL BEENDEN</a></li>
+                        <li><img id="bild" src="Pic/Stressed.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Nächste Seite Pfeile-->
+        <div class="arrow" id="nextLevel" style="display: none">
+            <a href="Bahn.html">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <!--        erst bei bestandenen Level-->
+        </div>
+        <div id="gmModalDialog" class="divModalDialog3">
+            <div class="divgmPopUpMainContent">
+                <div id="frage">
+                    <div id="rateWort">
+                        <h2 id="aufgabe">Um deine Bachelorarbeit zu beenden musst du dein Laptop entsperren. Passwort:</h2>
+                        <div id="strich">
+                            <div id="letter0"></div>
+                            <div id="letter1"></div>
+                            <div id="letter2"></div>
+                            <div id="letter3"></div>
+                            <div id="letter4"></div>
+                            <div id="letter5"></div>
+                            <div id="letter6"></div>
+                            <div id="letter7"></div>
+                            <div id="letter8"></div>
+                            <div id="letter9"></div>
+                            <div id="letter10"></div>
+                            <div id="letter11"></div>
+                            <div id="letter12"></div>
+                            <div id="letter13"></div>
+                            <div id="letter14"></div>
+                            <div id="letter15"></div>
+                            <div id="letter16"></div>
+                        </div>
+
+                    </div>
+                    <div id="hangman">
+                        <!-- zeigen, dass es ein Hangman spiel ist-->
+                        <h2 id="versuche">Galgenmännchen</h2>
+                        <img src="Pic/HM/Galgenm%C3%A4nchen1.png" id="GM1">
+                        <img src="Pic/HM/Galgenm%C3%A4nchen2.png" id="GM2">
+                        <img src="Pic/HM/Galgenm%C3%A4nchen3.png" id="GM3">
+                        <img src="Pic/HM/Galgenm%C3%A4nchen4.png" id="GM4">
+                        <img src="Pic/HM/Galgenm%C3%A4nchen5.png" id="GM5">
+                        <img src="Pic/HM/Galgenm%C3%A4nchen6.png" id="GM6">
+                        <img src="Pic/HM/Galgenm%C3%A4nchen7.png" id="GM7">
+                    </div>
+                </div>
+                <div id="antwort">
+                    <button class="alphabet" id="A" onclick="pruefen('A')">A</button>
+                    <button class="alphabet" id="B" onclick="pruefen('B')">B</button>
+                    <button class="alphabet" id="C" onclick="pruefen('C')">C</button>
+                    <button class="alphabet" id="D" onclick="pruefen('D')">D</button>
+                    <button class="alphabet" id="E" onclick="pruefen('E')">E</button>
+                    <button class="alphabet" id="F" onclick="pruefen('F')">F</button>
+                    <button class="alphabet" id="G" onclick="pruefen('G')">G</button>
+                    <button class="alphabet" id="H" onclick="pruefen('H')">H</button>
+                    <button class="alphabet" id="I" onclick="pruefen('I')">I</button>
+                    <button class="alphabet" id="J" onclick="pruefen('J')">J</button>
+                    <button class="alphabet" id="K" onclick="pruefen('K')">K</button>
+                    <button class="alphabet" id="L" onclick="pruefen('L')">L</button>
+                    <button class="alphabet" id="M" onclick="pruefen('M')">M</button><br>
+                    <button class="alphabet" id="N" onclick="pruefen('N')">N</button>
+                    <button class="alphabet" id="O" onclick="pruefen('O')">O</button>
+                    <button class="alphabet" id="P" onclick="pruefen('P')">P</button>
+                    <button class="alphabet" id="Q" onclick="pruefen('Q')">Q</button>
+                    <button class="alphabet" id="R" onclick="pruefen('R')">R</button>
+                    <button class="alphabet" id="S" onclick="pruefen('S')">S</button>
+                    <button class="alphabet" id="T" onclick="pruefen('T')">T</button>
+                    <button class="alphabet" id="U" onclick="pruefen('U')">U</button>
+                    <button class="alphabet" id="V" onclick="pruefen('V')">V</button>
+                    <button class="alphabet" id="W" onclick="pruefen('W')">W</button>
+                    <button class="alphabet" id="X" onclick="pruefen('X')">X</button>
+                    <button class="alphabet" id="Y" onclick="pruefen('Y')">Y</button>
+                    <button class="alphabet" id="Z" onclick="pruefen('Z')">Z</button>
+                </div>
+            </div>
+        </div>
+        <div id="field">
+            <!--Spiel-->
+            <div id="aufgabeModalDialog" class="aufgabeModalDialog" style="color: white">
+                <div class="aufgabePopUpMainContent">
+                    <h1>
+                        <font color=white>Aufgabenstellung</font>
+                    </h1>
+                    Jetzt bin ich in der Bibliothek angekommen. Ich sehe, dass nur noch zwei Tische frei sind. An welchen soll ich mich setzen?
+
+                </div>
+                <div id="zurueckButton" onclick="aufgabePopUp()"><a href="#">Los geht's!</a></div>
+            </div>
+
+            <div id="content">
+                <!--linker Tisch wurde ausgewählt-->
+                <img class="background" id="background" src="Pic/bib.jpg">
+
+                <div id="tischL" onmouseover="switchL()" onmouseout="switchBack()" onclick="openModalL()">
+                    <a href="#tischLModalDialog4"></a>
+                </div>
+                <div id="tischLModalDialog4" class="divModalDialog4">
+                    <div class="tischLPopUpMainContent">
+                        <h1 id="mainTextL">Hoppla! Du hast den Kaffee umgekippt!<br> Er läuft langsam in deinen Laptop hinein.<br>
+                            Hast du etwas passendes dabei?
+                        </h1>
+
+                        <button class="gameOverButton" onclick="gameOverL()">Ich habe nichts passendes dabei...</button>
+                    </div>
+                </div>
+                <!--der rechte Tisch wurde ausgewählt-->
+                <div id="tischR" onmouseover="switchR()" onmouseout="switchBack()" onclick="openModalR()" button> <a href="#tischRModalDialog5"></a>
+                </div>
+                <div id="tischRModalDialog5" class="divModalDialog5">
+                    <div class="tischRPopUpMainContent">
+                        <img src="Pic/lowbattery.gif" alt="low_Battery" id="batteryGif">
+                        <h1 id="mainTextR">Akku leer! Hast du was passendes dabei?</h1>
+                        <button class="gameOverButton" id="buttonR" onclick="gameOverR()">Ich habe nichts passendes dabei...</button>
+                    </div>
+                </div>
+
+                <!--das Rätsel Pop up falls man kein Kabel-Item dabei hatte-->
+                <div id="raetselModalDialog" class="raetselModalDialog">
+                    <div class="raetselPopUpMainContent">
+                        <h2>
+                            <font color=white>Hallo, ich kann dir helfen, wenn du mein kleines Rätsel löst:</font>
+                        </h2>
+                        <h3>
+                            <font color=white>Auf welcher Zahl sitzt der Hund?</font>
+                        </h3>
+                        <div id="tipp" style="display:none;">
+                            <p>
+                                <font color=white>Tipp: Beim Rätsel lösen hilft es mir oft auf dem Kopf zu stehen...</font>
+                            </p>
+                        </div>
+                        <div id="raetselContent"><img src="pic/matheRaetselDog_bg.jpg" style height="200px">
+                            <h3 id="versucheUebrig">
+                                <font color=white>Du hast noch 2 Versuch(e)!</font>
+                            </h3>
+                            <input id="textfeld" type="number" onblur="lesen()" onfocus="textAusblenden()" onchange="lesen()" oninput="textAusblenden()" />
+                        </div>
+                        <div id="accessDenied" style="display:none;">
+                            <h3>
+                                <font color=white>Leider falsch! Probiere es nochmal!</font>
+                            </h3>
+                        </div>
+                        <div id="accessAvailable" style="display:none;">
+                            <h3>
+                                <font color=white>Klasse! Danke! Jetzt kann ich dir auch helfen :)</font>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="menue">
+                    <div id="home">
+                        <!-- Pause -->
+                        <div style="text-align:center;">
+                            <div id="pauseButton">
+                                <a href="#homeModalDialog" title="Menü"><img src="pic/pauseIcon.png" alt="Pause" /></a>
+                            </div>
+                            <div id="homeModalDialog" class="divModalDialog">
+                                <div class="divPopUpMainContent">
+                                    <h1>
+                                        <font color="white">PAUSIERT</font>
+                                    </h1>
+                                    <ul>
+                                        <li><a href="#">ZURÜCK ZUM SPIEL</a></li>
+                                        <li><a href="index.html">NEUES SPIEL</a></li>
+                                        <li><a href="credit.html">SPIEL BEENDEN</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Gegenstände, die in Home ausgewählt wurden-->
+                    <div id="inventar">
+                        <div id="1item" class="items"></div>
+                        <div id="2item" class="items"></div>
+                        <div id="3item" class="items"></div>
+                        <div id="4item" class="items"></div>
+                        <div id="5item" class="items"></div>
+                        <div id="6item" class="items"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

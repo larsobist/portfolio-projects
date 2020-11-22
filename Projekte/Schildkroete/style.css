@@ -1,0 +1,360 @@
+/*Für jede Seite*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+} 
+
+h2 {
+    font-weight: 300;
+    font-size: 27px;
+    margin: 0 0 10px 0;
+}
+h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.main-header-container {
+    background: #fff;
+}
+
+.main-header,
+.intro,
+.intro-content,
+.colums,
+.slogan,
+.legal,
+.content-header,
+.content {
+    width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.main-header .logo {
+    float: left;
+}
+.main-header nav {
+    float: right;
+    padding-top: 40px;
+}
+
+.main-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header li {
+    float: left;
+}
+
+.main-header nav a {
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 300;
+    color: #222;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.main-header nav a:hover {
+    border-color: lightgray;
+}
+
+.intro {
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+
+.intro h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color:white;
+} 
+
+.intro h1 span {
+    display: block;
+    font-size: 25px;
+}
+
+#intro-text,
+#intro-aside {
+    float: left;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#intro-text {
+    width: 60%;
+}
+#intro-text p {
+    margin-top: 0;
+}
+
+#intro-aside {
+    width: 40%;
+    border-left: 1px solid #333;
+}
+#intro-aside h3,
+#intro-aside p {
+    margin: 0;
+}
+
+.colums-container {
+    background:  white;
+    padding: 40px 0;
+    
+}
+
+.colums article {
+    float: left;
+    width: 33.33%;
+    padding: 0 20px;
+    text-align: center;
+    border-left: 1px solid #333;
+}
+
+.colums article:first-child {
+    border: none;
+}
+
+.colums article .button {
+    display: block;
+}
+
+.legal {
+    background:;
+}
+
+.legal-container a {
+    color: #e3d8c6;
+    font-weight: 700;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+
+.slogan p {
+    font-size: 23px;
+    line-height: 1.2;
+}
+
+.slogan p span {
+    display: block;
+    font-weight: 700;
+}
+
+/* Button */
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    color: white;
+    text-decoration-color: white;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.button:hover {
+    background: lightblue;
+    color: white;
+}
+
+.btn-dark {
+    border-color: #222;
+    color: #222;
+}
+.btn-dark:hover {
+    background: #222;
+    color: white;
+}
+
+/* Startseite*/
+
+.intro-container {
+    background: transparent url(img/Schildkröte-Insel.jpg) bottom center no-repeat;
+    height: 600px;
+    background-size: cover;
+}
+
+.intro-content-container {
+    background: white;
+    padding: 40px 0;
+}
+.intro-content {
+}
+
+.slogan-container {
+    background: ;
+    color: royalblue;
+}
+
+.legal-container {
+    text-align: center;
+    background: royalblue;
+    color:  #e3d8c6;
+}
+
+/*Informations Seite*/
+
+.intro-container2 {
+    background: transparent url(img/Meeresschildkroete.jpg) bottom center no-repeat;
+    height: 500px;
+    background-size: cover;
+}
+
+.main-content-container {
+    background: #f1ede4;
+}
+
+.main-content-container h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-header-container {
+    border-bottom: 1px solid #222;
+}
+
+.main-content-container h2 {
+    text-align: center;
+    text-transform:uppercase;
+}
+
+.infotext {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.legal-container {
+    text-align: center;
+    background: royalblue;
+    color:  #e3d8c6;
+}
+
+/*Galerie Seite*/
+
+#intro-container3 {
+    background: transparent url(img/Korallen.jpg) bottom center no-repeat;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+}
+
+.gallery {
+    margin: 10px 50px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 430px;
+    padding: 5px;
+    filter: blur(100%)
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+#slogan-container3 {
+    background: ;
+    color: firebrick;
+}
+
+#legal-container3 {
+    text-align: center;
+    background: firebrick;
+    color:  #e3d8c6;
+}
+
+/*Spenden Seite*/
+
+#intro-container4 {
+    background: transparent url(img/Geld.jpg) bottom center no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+
+.btn-green:hover {
+    background: lightgreen;
+    color: white;
+}
+
+#slogan-container4 {
+    background: ;
+    color: seagreen;
+}
+
+#legal-container4 {
+    text-align: center;
+    background: seagreen;
+    color:  #e3d8c6;
+}
+
+/*Impressum Seite*/
+
+.intro h5 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: black;    
+}
+
+#intro-container5 {
+    background: transparent url(img/Impressum.jpg) bottom center no-repeat;
+    width: auto;
+    background-size: cover;
+}
+
+#slogan-container5 {
+    background: ;
+    color: gray;
+}
+
+#legal-container5 {
+    text-align: center;
+    background: gray;
+    color:  #e3d8c6;
+}
+
+/* Clearfix*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
