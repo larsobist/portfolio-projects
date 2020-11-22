@@ -1,0 +1,301 @@
+/*Projekte*/
+
+.projects {
+    height: auto;
+    background: #FFD039;
+    padding-bottom: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 32px -7px rgba(255, 208, 57, 0.75);
+    -moz-box-shadow: 10px 10px 32px -7px rgba(255, 208, 57, 0.75);
+    box-shadow: 10px 10px 32px -7px rgba(255, 208, 57, 0.75);
+}
+
+.projects img {
+    float: clear;
+}
+
+
+/* Preview */
+
+.projectBox {
+    width: 100%;
+    /* background-color: red; */
+    height: 200px;
+    margin: 2%;
+    background: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 7px;
+    -webkit-box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+@media(max-width:1000px) {
+    .projectBox {
+        width: 85%;
+    }
+}
+
+.projectBox:hover {
+    transform: scale(1.05);
+}
+
+.projectBoxBig {
+    width: 85%;
+    background-color: green;
+    height: 350px;
+    margin: 2%;
+    background: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 7px;
+    -webkit-box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+@media(max-width:1200px) {
+    .projectBoxBig {
+        width: 100%;
+    }
+}
+
+.projectBoxBig:hover {
+    transform: scale(1.05);
+}
+
+.projectBoxInhalt {
+    background-color: rgba(26, 26, 26, 0.7);
+    width: calc(100% - 30px);
+    color: #fff;
+    padding: 5px;
+    height: auto;
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.projectBoxTitel {
+    font-size: 18pt;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.projectBoxKategorie ul {
+    padding: 0;
+    margin: 0;
+}
+
+.projectBoxKategorie ul li {
+    list-style: none;
+    font-size: 12pt;
+    line-height: 20px;
+}
+
+
+/* Grid  */
+
+#item1 {
+    grid-area: big1;
+}
+
+#item2 {
+    grid-area: left2;
+}
+
+#item3 {
+    grid-area: right3;
+}
+
+#item4 {
+    grid-area: big4;
+}
+
+#item5 {
+    grid-area: left5;
+}
+
+#item6 {
+    grid-area: right6;
+}
+
+#item7 {
+    grid-area: left7;
+}
+
+#item8 {
+    grid-area: right8;
+}
+
+#item9 {
+    grid-area: left9;
+}
+
+#item10 {
+    grid-area: right10;
+}
+
+.grid-container-mixed {
+    display: grid;
+    grid-template-areas: 'big1 big1' 'left2 right3' 'big4 big4' 'left5 right6' 'left7 right8 ' 'left9 right10';
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.grid-container-mixed>div {
+    text-align: center;
+}
+
+@media (max-width:1000px) {
+    .grid-container-mixed {
+        grid-template-areas: 'big1' 'left2' 'right3' 'big4' 'left5' 'right6' 'left7' 'right8' 'left9' 'right10';
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width:900px) {
+    .grid-container-mixed {
+        grid-template-areas: 'big1' 'left2' 'right3' 'big4' 'left5' 'right6' 'left7' 'right8' 'left9' 'right10';
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+}
+
+@media (max-width:800px) {
+    .grid-container-mixed {
+        grid-template-areas: 'big1' 'left2' 'right3' 'big4' 'left5' 'right6' 'left7' 'right8' 'left9' 'right10';
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.grid-item {
+    width: auto;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.grid-item img {
+    height: auto;
+    width: 50px;
+}
+
+
+/* Modal  */
+
+h5 {
+    /* Für die Modals */
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24pt;
+    color: #FFD039;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background: #303030;
+    padding: 2.5%;
+    margin-left: 21.5%;
+    margin-right: 21.5%;
+    height: auto;
+    width: 52%;
+    -webkit-box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    /* float: right; */
+    /* margin-top: 30px; */
+    /* margin-right: 19.2%; */
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: 40px;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonProjekt {
+    font-weight: 500;
+    background: #FFD039;
+    color: white;
+    font-size: 15pt;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    -webkit-box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.buttonProjekt:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+.gallery img {
+    height: 80px;
+    width: 140px;
+    margin: 10px;
+    margin-top: 10px;
+    transition: 1s;
+    -webkit-box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}

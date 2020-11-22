@@ -1,0 +1,39 @@
+/*Kontakt*/
+
+.contact {
+    height: 88vh;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 40px;
+    background: #F47942;
+    text-align: center;
+    color: white;
+    font-size: 17pt;
+    -webkit-box-shadow: 10px 10px 32px -7px rgba(244, 121, 66, 0.75);
+    -moz-box-shadow: 10px 10px 32px -7px rgba(244, 121, 66, 0.75);
+    box-shadow: 10px 10px 32px -7px rgba(244, 121, 66, 0.75);
+}
+
+.buttonContact {
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #303030;
+    height: 80px;
+    width: 90%;
+    margin: 45px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+    font-size: 24pt;
+    -webkit-box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 32px -7px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.buttonContact:hover {
+    transform: scale(1.02);
+}
