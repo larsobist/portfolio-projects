@@ -10,6 +10,7 @@ html {
 /* color: #d4145a; */
 
 body {
+    overflow-x: hidden;
     background-color: #212121;
     font-family: 'Avenir', sans-serif;
     font-weight: 400;
