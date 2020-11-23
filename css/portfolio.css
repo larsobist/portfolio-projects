@@ -117,7 +117,7 @@ header img:hover {
     padding: 0;
     background: rgba(0, 0, 0, 0.8);
     display: none;
-    left: -100%;
+    left: -100vw;
     display: block;
     padding: 0;
     top: 0;

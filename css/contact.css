@@ -1,7 +1,7 @@
 /*Kontakt*/
 
 .contact {
-    height: 88vh;
+    height: auto;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
@@ -13,6 +13,7 @@
     -webkit-box-shadow: 10px 10px 32px -7px rgba(244, 121, 66, 0.75);
     -moz-box-shadow: 10px 10px 32px -7px rgba(244, 121, 66, 0.75);
     box-shadow: 10px 10px 32px -7px rgba(244, 121, 66, 0.75);
+    padding-bottom: 10px;
 }
 
 .buttonContact {
