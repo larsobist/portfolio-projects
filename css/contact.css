@@ -1,6 +1,7 @@
 /*Kontakt*/
 
 .contact {
+    z-index: 0;
     height: auto;
     width: 90%;
     margin-left: 5%;
