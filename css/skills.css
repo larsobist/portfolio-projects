@@ -1,18 +1,5 @@
 /*Kenntnisse*/
 
-.skills {
-    height: auto;
-    background: #45C48B;
-    padding-bottom: 10px;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: center;
-    -webkit-box-shadow: 10px 10px 32px -7px rgba(69, 196, 130, 0.75);
-    -moz-box-shadow: 10px 10px 32px -7px rgba(69, 196, 130, 0.75);
-    box-shadow: 10px 10px 32px -7px rgba(69, 196, 130, 0.75);
-}
-
 .contentBoxImg {
     width: 20%;
     margin-right: 40px;
@@ -21,22 +8,19 @@
     margin-left: 40px;
 }
 
-.contentBoxImg img {
+.grid-item img {
     height: 50px;
 }
 
-.contentBoxImgGross {
-    width: 30%;
-    margin-right: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 60px;
+.grid-item-big img {
+    height: 150px;
 }
 
 .grid-container {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-bottom: 30px;
 }
 
 @media (max-width:800px) {
@@ -47,7 +31,8 @@
     }
 }
 
-.item {
+.grid-item {
+    line-height: 1.8;
     width: auto;
     padding: 5px;
     justify-content: center;
@@ -56,16 +41,13 @@
     text-align: center;
 }
 
-.HalbseiteText {
-    width: 50%;
-    display: center;
-    align-items: center;
-    justify-content: center;
+.grid-item img {
+    height: auto;
+    width: 50px;
 }
 
-.HalbseiteTextGross {
-    width: 70%;
-    display: center;
+.HalbseiteText {
+    width: 50%;
     align-items: center;
     justify-content: center;
 }
