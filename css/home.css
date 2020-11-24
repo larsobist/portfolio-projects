@@ -33,7 +33,7 @@ h1 {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: url('../img/1.JPG');
+    background-image: url('../img/hintergrund.png');
     background-size: cover;
     background-position: center 30%;
     -webkit-filter: blur(var(--blur));
