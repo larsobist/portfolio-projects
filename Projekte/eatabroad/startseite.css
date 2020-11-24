@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poiret One';
+}
+
+a {
+    text-decoration: none;
+}
+
+#kyoto {
+    background: url(img/sonstige/QKyoto.jpg);
+    background-size: cover;
+}
+
+#kapstadt {
+    background: url(img/sonstige/QKapstadt.jpg);
+    background-size: cover;
+}
+
+#Lima {
+    background: url(img/sonstige/QLima.jpg);
+    background-size: cover;
+}
+
+#Marrakesh {
+    background: url(img/sonstige/QMarrakesh.jpg);
+    background-size: cover;
+}
+
+#MexicoCity {
+    background: url(img/sonstige/QMexicoCity.jpg);
+    background-size: cover;
+}
+
+#Phuket {
+    background: url(img/sonstige/QPhuket.jpg);
+    background-size: cover;
+}
+
+#SantiagoDeChile {
+    background: url(img/sonstige/QSantiagoDeChile.jpg);
+    background-size: cover;
+}
+
+@media screen and (min-width: 1000px) {
+    #desktop{
+        display: block;
+    }
+    #mobile{
+        display: none;
+    }
+    
+    .container {
+        max-width: 1000px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        transition: 0.5s;
+    }
+
+    #logo {
+        font-size: 160pt;
+        max-width: 1000px;
+    }
+
+    #city {
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        transition: 0.5s;
+    }
+
+    #city:hover .card {
+        filter: blur(5px);
+        transform: scale(.7);
+    }
+
+    #city .card:hover {
+        transform: scale(1.5);
+        filter: blur(0px);
+        color: white;
+
+    }
+
+    .leer {
+        height: 150px;
+    }
+
+    .leer:nth-child(1) {
+        width: 10px;
+    }
+
+    .leer:nth-child(4) {
+        width: 60px;
+    }
+
+    .leer:nth-child(6) {
+        width: 20px;
+    }
+
+    .leer:nth-child(8) {
+        width: 90px;
+    }
+
+    .leer:nth-child(10) {
+        width: 10px;
+    }
+
+    .leer:nth-child(12) {
+        width: 15px;
+    }
+
+    .card {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        margin-right: 10px;
+        margin-top: 15px;
+        /*        background-color: firebrick;*/
+        border-radius: 50%;
+        color: transparent;
+    }
+
+    .content {
+        text-align: center;
+        z-index: 2;
+        padding: 0 20px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 999px) {
+     #desktop{
+        display: block;
+    }
+    #mobile{
+        display: none;
+    }
+    .container {
+        max-width: 600px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        transition: 0.5s;
+        height: 510px;
+    }
+
+    #logo {
+        font-size: 100pt;
+        max-width: 600px;
+    }
+
+    #city {
+        max-width: 600px;
+        width: 600px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        transition: 0.5s;
+    }
+
+    #city:hover .card {
+        filter: blur(5px);
+        transform: scale(.7);
+    }
+
+    #city .card:hover {
+        transform: scale(1.5);
+        filter: blur(0px);
+        color: black;
+
+    }
+
+    .leer {
+        height: 150px;
+    }
+
+    .leer:nth-child(1) {
+        width: 10px;
+    }
+
+    .leer:nth-child(4) {
+        width: 60px;
+    }
+
+    .leer:nth-child(6) {
+        width: 20px;
+    }
+
+    .leer:nth-child(8) {
+        width: 90px;
+    }
+
+    .leer:nth-child(10) {
+        width: 10px;
+    }
+
+    .leer:nth-child(12) {
+        width: 15px;
+    }
+
+    .card {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        margin-right: 10px;
+        margin-top: 15px;
+        /*        background-color: firebrick;*/
+        border-radius: 50%;
+        color: transparent;
+    }
+
+    .content {
+        text-align: center;
+        z-index: 2;
+        padding: 0 20px;
+        transition: 0.5s;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+     #desktop{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
+    .container {
+        max-width: 367px;
+        position: relative;
+        display: flex;
+        height: auto;
+        flex-wrap: wrap;
+        transition: 0.5s;
+    }
+
+    #logo {
+        font-size: 60pt;
+        max-width: 367px;
+    }
+
+    #city {
+        max-width: 367px;
+        min-height: 400px;
+        height: auto;
+        width: 367px;
+        display: flex;
+/*        justify-content: center;*/
+        flex-wrap: wrap;
+        transition: 0.5s;
+    }
+
+    #city:hover .card {
+        filter: blur(5px);
+        transform: scale(.7);
+    }
+
+    #city .card:hover {
+        transform: scale(1.5);
+        filter: blur(0px);
+        color: white;
+
+    }
+
+    #rowone {
+        height: 100%;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+    #rowtwo {
+        height: 100%;
+        margin-left: 0;
+    }
+
+    .card {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+/*        margin-right: 10px;*/
+        margin-top: 15px;
+        background-color: firebrick;
+        border-radius: 50%;
+        color: transparent;
+        /*    animation: load ease-in 7s;*/
+    }
+
+    .content {
+        text-align: center;
+        z-index: 2;
+        padding: 0 20px;
+        transition: 0.5s;
+    }
+
+}
