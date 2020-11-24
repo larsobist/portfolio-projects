@@ -41,7 +41,7 @@ section {
 }
 
 header {
-    height: 10vh;
+    /* height: 10vh; */
     width: 100vw;
     z-index: 3;
     margin-left: 5%;
@@ -71,19 +71,9 @@ header img:hover {
 /*Navigation*/
 
 #menueButton {
-    position: fixed;
-    height: 50px;
-    width: 50px;
-    background: transparent;
+    margin-top: 10px;
     float: right;
-    display: none;
-    margin-left: 90%;
-    margin-right: 50px;
-    margin-top: 50px;
-    z-index: 4;
-}
-
-#menueButton {
+    margin-right: 10%;
     display: block;
     transition: 1s;
 }
