@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Throwback</title>
+
+    <!--    favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <script src="http://cdn.jsdelivr.net/npm/phaser@3.17.0/dist/phaser.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="Level1.js" type="text/javascript"></script>
+    <script src="Level2.js" type="text/javascript"></script>
+    <script src="Level3.js" type="text/javascript"></script>
+    <script src="Level4.js" type="text/javascript"></script>
+    <script src="storyLevel1.js" type="text/javascript"></script>
+    <script src="storyLevel2.js" type="text/javascript"></script>
+    <script src="storyLevel3.js" type="text/javascript"></script>
+    <script src="storyLevel4.js" type="text/javascript"></script>
+
+    <script src="story.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function startGame(x) {
+            document.getElementById("menu").style.display = "none";
+            switch (x) {
+                case 1:
+                    Level1();
+                    console.log("Level 1");
+                    break;
+                case 2:
+                    Level2();
+                    console.log("Level 2");
+                    break;
+                case 3:
+                    Level3();
+                    console.log("Level 3");
+                    break;
+                case 4:
+                    Level4();
+                    console.log("Level 4");
+                    break;
+                case 5:
+                    document.getElementById("storyEinleitung").style.display = "block";
+                    console.log("Storymode");
+                    switchEinleitungsText();
+                    break;
+            }
+        }
+
+        function showMenu() {
+            document.getElementById("menu").style.display = "block";
+            document.getElementById("gameOver").style.display = "none";
+            document.getElementById("anleitung").style.display = "none";
+            document.getElementById("levelGeschafft").style.display = "none";
+            document.getElementById("storyGeschafft").style.display = "none";
+        }
+
+        function showAnleitung() {
+            document.getElementById("anleitung").style.display = "block";
+            document.getElementById("menu").style.display = "none";
+        }
+
+        function audio() {
+            document.getElementById('musik').addEventListener('ended', function() {
+                this.currentTime = 0;
+            }, false);
+            var music = document.getElementById('musik');
+            music.volume = 0.5;
+
+        }
+
+        function switchEinleitungsText() {
+            setTimeout(function() {
+                document.getElementById("sprechblase").style.display = 'none';
+                document.getElementById("einleitungsText").style.display = 'block';
+            }, 5000)
+        }
+
+    </script>
+</head>
+
+<body onload="audio">
+    <audio id="musik" controls autoplay loop>
+        <source src="assets/sound/hintergrundMusik.mp3" type="audio/mpeg">
+        <script>
+            var music = document.getElementById('musik');
+            music.volume = 0.3;
+
+        </script>
+    </audio>
+    <div id="main">
+        <div id="field">
+
+            <div id="menu">
+                <h1>Throwback</h1>
+                <div id="anleitungButton" onclick="showAnleitung()">Anleitung</div>
+
+                <center>
+                    <div id="levelMode">
+                        <div id="storyMode" onclick="startGame(5)">Story Mode</div>
+                        <ul>
+                            <li id="Lvl4" onclick="startGame(4)">1920er</li>
+                            <li id="Lvl3" onclick="startGame(3)">1940er</li>
+                            <li id="Lvl2" onclick="startGame(2)">1970er</li>
+                            <li id="Lvl1" onclick="startGame(1)">2000er</li>
+                        </ul>
+                    </div>
+                </center>
+            </div>
+            <div id="anleitung">
+                <h1>Anleitung </h1>
+
+                Ob im Storymodus oder im spezifischen Jahrzehnt, bleibt das Ziel des Spiels das Level zu überleben und zum nächsten zu gelangen. Dafür hast du drei Leben pro Level.
+                Doch sei gewarnt: Beim Fallen in Gräben oder beim erfolglosen Umgehen von Hindernissen stirbst du.
+                <br><br>
+                Der Spieler kann über die LEERTASTE oder über die PFEIL-OBEN-TASTE gesteuert werden.
+                <ul>
+                    <li>
+                        <a href="index.html"> Zurück zum Menü</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="gameOver">
+                <h1>Game Over!</h1>
+                Du hast es
+                nicht geschafft dieses Jahrzehnt zu überleben. Möglicherweise war in der Vergangenheit tatsächlich nicht alles einfacher und besser wie immer alle sagen!
+                <ul>
+                    <li>
+                        <a href="index.html"> Zurück zum Menü</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="levelGeschafft">
+                <h1>Level geschafft!</h1>
+                <p>
+                    Glückwunsch! Du hast es geschafft! Mach dich bereit, auf alles was noch kommt... Man weiß ja nie, was die Vergangenheit so mit sich bringt...!
+                </p>
+                <ul>
+                    <li>
+                        <a href="index.html">Zurück zum Menü</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="storyEinleitung">
+
+                <div id="sprechblase">
+                    <img width="100%" ; height="auto" src="assets/speechbubble.gif">
+                </div>
+
+
+                <div id="omaPic">
+                    <img src="assets/oma.png">
+                </div>
+                <div id="einleitungsText">
+                    <h1>Oh man!</h1>
+                    <p>
+                        Das hab ich echt oft gehört. <br>
+                        Doch stimmt das wirklich?
+                        <br>
+                        Ich will es jetzt selber heraus finden!
+                    </p>
+                    <ul>
+                        <li onclick="story()">
+                            Zum Spiel!
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div id="storyGeschafft">
+                <h1>Endlich geschafft!</h1>
+                <p>
+                    Wow! Du hast es drauf, selbst die Vergangenheit kann dich nicht einholen!
+                    Na? Waren die alten Zeiten wirklich gut?
+                </p>
+                <ul>
+                    <li>
+                        <a href="index.html"> Zurück zum Menü</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
