@@ -22,11 +22,12 @@
     transition: 1s;
 }
 
-@media(max-width:1000px) {
+
+/* @media(max-width:800px) {
     .projectBox {
         width: 85%;
     }
-}
+} */
 
 .projectBox:hover {
     transform: scale(1.05);

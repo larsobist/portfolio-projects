@@ -252,14 +252,14 @@ h4 {
 }
 
 .contentBox {
-    z-index: 10;
-    color: white;
-    background: #070f0e;
-    padding: 5%;
     height: auto;
     width: 80%;
+    z-index: 10;
+    padding: 5%;
     margin-left: 5%;
     margin-right: 5%;
+    color: white;
+    background: #070f0e;
     text-align: center;
     justify-content: center;
     align-content: center;
@@ -268,3 +268,18 @@ h4 {
     -moz-box-shadow: 10px 10px 32px -7px rgba(7, 15, 14, 0.75);
     box-shadow: 10px 10px 32px -7px rgba(7, 15, 14, 0.75);
 }
+
+
+/* @media(max-width:1200px) {
+    .contentBox {
+        width: 90%;
+        margin-left: 0;
+    }
+}
+
+@media(max-width:1000px) {
+    #content {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+} */
