@@ -66,7 +66,6 @@ header img:hover {
 /*Navigation*/
 
 #menueButton {
-    margin-top: 10px;
     float: right;
     margin-right: 10%;
     display: block;
@@ -243,8 +242,7 @@ h4 {
     box-shadow: 10px 10px 32px -7px rgba(7, 15, 14, 0.75);
 }
 
-
-/* @media(max-width:1200px) {
+@media(max-width:1200px) {
     .contentBox {
         width: 90%;
         margin-left: 0;
@@ -256,4 +254,11 @@ h4 {
         margin-left: 10%;
         margin-right: 10%;
     }
-} */
+}
+
+@media(max-width:800px) {
+    #content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

@@ -23,7 +23,7 @@
     margin-bottom: 30px;
 }
 
-@media (max-width:800px) {
+@media (max-width:700px) {
     .grid-container {
         width: 100%;
         display: grid;

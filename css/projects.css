@@ -49,14 +49,14 @@
     transition: 1s;
 }
 
-@media(max-width:1200px) {
+@media(max-width:700px) {
     .projectBoxBig {
         width: 100%;
         height: 350px;
     }
 }
 
-@media(max-width:1000px) {
+@media(max-width:700px) {
     .projectBoxBig {
         width: 100%;
         height: 300px;
@@ -150,7 +150,7 @@
     text-align: center;
 }
 
-@media (max-width:1000px) {
+@media (max-width:700px) {
     .grid-container-mixed {
         grid-template-areas: 'big1' 'left2' 'right3' 'big4' 'left5' 'right6' 'left7' 'right8' 'left9' 'right10';
     }
