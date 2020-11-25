@@ -156,32 +156,6 @@ nav {
     position: fixed;
 }
 
-nav ul li:nth-child(1) {
-    color: #323741;
-    font-size: 30pt;
-    display: none;
-}
-
-nav ul li:nth-child(2) {
-    color: #06858C;
-    font-size: 30pt;
-}
-
-nav ul li:nth-child(3) {
-    color: #45C48B;
-    font-size: 30pt;
-}
-
-nav ul li:nth-child(4) {
-    color: #FFD039;
-    font-size: 30pt;
-}
-
-nav ul li:nth-child(5) {
-    color: #F47942;
-    font-size: 30pt;
-}
-
 nav a:visited {
     color: transparent;
 }
