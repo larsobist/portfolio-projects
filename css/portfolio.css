@@ -42,7 +42,7 @@ header {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 15px;
     position: fixed;
 }
 
@@ -242,10 +242,17 @@ h4 {
     box-shadow: 10px 10px 32px -7px rgba(7, 15, 14, 0.75);
 }
 
-@media(max-width:1200px) {
+@media(max-width:1300px) {
     .contentBox {
         width: 90%;
         margin-left: 0;
+    }
+}
+
+@media(max-width:1200px) {
+    #content {
+        margin-left: 12%;
+        margin-right: 12%;
     }
 }
 
@@ -256,9 +263,30 @@ h4 {
     }
 }
 
+@media(max-width:900px) {
+    #content {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
+
 @media(max-width:800px) {
     #content {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+}
+
+@media(max-width:700px) {
+    #content {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+
+@media(max-width:600px) {
+    #content {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
