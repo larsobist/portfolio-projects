@@ -10,3 +10,7 @@
 .VollseiteText {
     width: 100%;
 }
+
+.aboutme img {
+    border-radius: 100px;
+}
