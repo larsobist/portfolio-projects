@@ -1,0 +1,46 @@
+@font-face {
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/85648/IBMPlexSansVar-Roman.ttf');
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans';
+    text-rendering: optimizeSpeed;
+    width: 100%;
+    user-select: none;
+    line-height: 1em;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-weight: 100;
+    text-align: center;
+    width: 100vw;
+    font-size: 60pt;
+}
+
+h1 span {
+    transform: translateY(-10px);
+    user-select: none;
+}
+
+h1.flex {
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+h1.stroke span {
+    position: relative;
+    color: #211D26;
+    line-height: inherit;
+}
+
+h1.stroke span:after {
+    content: attr(data-char);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FE6730;
+    position: absolute;
+    left: 0;
+    line-height: inherit;
+    color: transparent;
+    z-index: -1;
+}

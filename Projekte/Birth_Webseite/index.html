@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Birth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/darkMode.css">
+    <link rel="stylesheet" href="./css/segmentedControls.css">
+    <link rel="stylesheet" href="./css/h1.css">
+    <link rel="stylesheet" href="./css/h2.css">
+    <link rel="stylesheet" href="./css/graph.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="darkModeToggle">
+            <div class="mode"></div>
+        </div>
+        <div class="container">
+            <ul>
+                <li>
+                    <div class="bereich">
+                        <div class="glass backGlass">
+                            <h1 id="title">Verteilung der Geburten</h1>
+                            <div class="onGlass"> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bereich">
+                        <div class="glass backGlass">
+                            <div class="segmented-controls">
+                                <input id="two-1" name="two" type="radio" onclick=show1() checked>
+                                <label for="two-1">Tagesübersicht</label>
+                                <input id="two-2" name="two" type="radio" onclick=show1()>
+                                <label for="two-2">Besondere Hervorhebungen</label>
+                            </div>
+                            <div class="contentBox" id="Tagesübersicht">
+                                <h2> Tagesübersicht</h2>
+                                <div class="onGlass">
+                                    <div id="chart"></div>
+                                </div>
+                            </div>
+                            <div class="contentBox noShow" id="Besonderes">
+                                <h2> Besonderes</h2>
+                                <div class="onGlass">Besonderes</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bereich">
+                        <div class="glass backGlass">
+                            <div class="segmented-controls">
+                                <input id="three-1" name="three" type="radio" onclick=show2() checked>
+                                <label for="three-1">Wochentagsübersicht</label>
+                                <input id="three-2" name="three" type="radio" onclick=show2()>
+                                <label for="three-2">Monatsübersicht</label>
+                                <input id="three-3" name="three" type="radio" onclick=show2()>
+                                <label for="three-3">Jahresübersicht</label>
+                            </div>
+                            <div class="contentBox" id="Wochentagsübersicht">
+                                <h2> Wochentagsübersicht</h2>
+                                <div class="onGlass">
+                                    <div id="chartWochentage" width="700px" height="400px"></div>
+                                </div>
+                            </div>
+                            <div class="contentBox noShow" id="Monatsübersicht">
+                                <h2> Monatsübersicht</h2>
+                                <div class="onGlass">
+                                    <div id="chartMonate" width="700px" height="400px"></div>
+                                </div>
+                            </div>
+                            <div class="contentBox noShow" id="Jahresübersicht">
+                                <h2> Jahresübersicht</h2>
+                                <div class="onGlass">
+                                    <div id="chartJahre" width="700px" height="400px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bereich">
+                        <div class="glass backGlass">
+                            <h2> Zusammenfassung</h2>
+                            <div class="onGlass"></div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="legal-container">
+                            &copy; Datenvisualisierung von <a href="https://larsobist.github.io/portfolio/" target="_blank"> Lars Obist</a> | Datensätze von <a href="https://github.com/fivethirtyeight/data/tree/master/births" target="_blank"> fivethirtyeight</a>
+                        </div>
+                    </footer>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src='https://bundle.run/css-scroll-snap-polyfill@0.1.2'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/apexcharts@3.4.1'></script>
+    <script src="./js/h1.js"></script>
+    <script src="./js/graph.js"></script>
+    <script src="./js/table.js"></script>
+
+</body>
+
+</html>
