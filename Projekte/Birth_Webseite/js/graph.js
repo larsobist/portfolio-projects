@@ -6,7 +6,10 @@ async function chartWochentage() {
         chart: {
             height: 400,
             type: "bar",
-            // foreColor: '#6D6D6D'
+            // foreColor: '#6D6D6D',
+            toolbar: {
+                show: false,
+            },
         },
         dataLabels: {
             enabled: false
@@ -16,6 +19,7 @@ async function chartWochentage() {
             name: "Anzahl",
             data: data.ys
         }],
+
         fill: {
             type: "gradient",
             gradient: {
@@ -75,7 +79,10 @@ async function chartMonate() {
         chart: {
             height: 400,
             type: "bar",
-            foreColor: '#6D6D6D'
+            // foreColor: '#6D6D6D',
+            toolbar: {
+                show: false,
+            },
         },
         dataLabels: {
             enabled: false
@@ -144,7 +151,10 @@ async function chartJahre() {
         chart: {
             height: 400,
             type: "bar",
-            foreColor: '#6D6D6D'
+            // foreColor: '#6D6D6D',
+            toolbar: {
+                show: false,
+            },
         },
         dataLabels: {
             enabled: false
