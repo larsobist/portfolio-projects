@@ -19,7 +19,7 @@ h1 {
 }
 
 h1 span {
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
     user-select: none;
 }
 

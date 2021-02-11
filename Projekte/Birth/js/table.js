@@ -1,20 +1,3 @@
-function generateData(count, yrange) {
-    var i = 0;
-    var series = [];
-    while (i < count) {
-        var x = (i + 1).toString();
-        var y =
-            Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
-
-        series.push({
-            x: x,
-            y: y
-        });
-        i++;
-    }
-    return series;
-}
-
 chartTable();
 async function chartTable() {
     // const data = await getTageData();
@@ -75,29 +58,65 @@ async function chartTable() {
                 show: false,
             },
         },
+        tooltip: {
+            x: {
+                show: true,
+            },
+        },
+
+        // tooltip: {
+        //     custom: function({ series, seriesIndex, dataPointIndex, w }) {
+
+        //         return (
+        //             '<div class="arrow_box">' +
+        //             "<span>" +
+        //             w.globals.labels[dataPointIndex] + "." + series[seriesIndex][series.name] +
+        //             " Anzahl: " +
+        //             series[seriesIndex][dataPointIndex] +
+        //             "</span>" +
+        //             "</div>"
+        //         );
+        //     }
+        // },
+
         dataLabels: {
-            enabled: false
+            enabled: false,
         },
         grid: {
-            show: false,
+            // show: false,
+            yaxis: {
+                lines: {
+                    show: false
+                }
+            },
         },
-        // xaxis: {
-        //     show: false,
-        // },
+        xaxis: {
+            tooltip: 'false',
+            show: true,
+            axisBorder: {
+                show: false,
+            },
+            axisTicks: {
+                show: false,
+            },
+            categories: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", ]
+        },
+
         // yaxis: {
-        //     show: false,
+        //     show: true,
         // },
+
         plotOptions: {
             heatmap: {
                 shadeIntensity: 0.5,
-                // radius: 8,
-                useFillColorAsStroke: true,
+                radius: 8,
+                // useFillColorAsStroke: true,
                 enableShades: false,
                 colorScale: {
                     ranges: [{
                             from: 0,
                             to: 9999,
-                            name: '-9999',
+                            name: '-10000',
                             color: '#FDE5B9'
                         },
                         {

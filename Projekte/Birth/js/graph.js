@@ -10,6 +10,10 @@ async function chartWochentage() {
             toolbar: {
                 show: false,
             },
+            // animations: {
+            //     enabled: false,
+            // }
+
         },
         dataLabels: {
             enabled: false
@@ -19,14 +23,28 @@ async function chartWochentage() {
             name: "Anzahl",
             data: data.ys
         }],
+        // plotOptions: {
+        //     bar: {
+        //         // horizontal: false,
+        //         borderRadius: 10,
+        //         endingShape: 'rounded',
+        //     }
+        // },
 
+
+        // tooltip: {
+        //     theme: 'dark',
+        // },
+        yaxis: {
+            show: false,
+        },
         fill: {
             type: "gradient",
             gradient: {
                 shadeIntensity: 1,
                 type: "vertical",
-                opacityFrom: 0.7,
-                opacityTo: 0.9,
+                // opacityFrom: 0.7,
+                // opacityTo: 0.9,
                 colorStops: [{
                         offset: 10,
                         color: "#F96958",
@@ -92,6 +110,9 @@ async function chartMonate() {
             name: "Anzahl",
             data: data.ys
         }],
+        yaxis: {
+            show: false,
+        },
         fill: {
             type: "gradient",
             gradient: {
@@ -164,6 +185,9 @@ async function chartJahre() {
             name: "Anzahl",
             data: data.ys
         }],
+        yaxis: {
+            show: false,
+        },
         fill: {
             type: "gradient",
             gradient: {

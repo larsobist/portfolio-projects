@@ -1,0 +1,9 @@
+.apexcharts-bar-series.apexcharts-plot-series .apexcharts-series path {
+    clip-path: inset(0% 0% -11% 0% round 8px);
+}
+
+
+/* .apexcharts-tooltip {
+    background: red;
+    color: orange;
+} */

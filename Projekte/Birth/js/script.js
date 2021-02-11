@@ -13,6 +13,7 @@ $('.mode').click(function() {
     $('.glass').toggleClass('darkMode');
     $('.onGlass').toggleClass('darkMode');
     $('.segmented-controls').toggleClass('segmented-controls-dark');
+    $('.background').toggleClass('background-dark');
 
 });
 

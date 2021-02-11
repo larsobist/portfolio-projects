@@ -97,12 +97,12 @@ var VFont = function() {
         }
     }
 
-    // this.animate = function() {
-    //     mouse.x += (cursor.x - mouse.x) / 20;
-    //     mouse.y += (cursor.y - mouse.y) / 20;
-    //     requestAnimationFrame(this.animate.bind(this));
-    //     this.render();
-    // }
+    this.animate = function() {
+        mouse.x += (cursor.x - mouse.x) / 20;
+        mouse.y += (cursor.y - mouse.y) / 20;
+        requestAnimationFrame(this.animate.bind(this));
+        this.render();
+    }
 
     this.render = function() {
         maxDist = title.getBoundingClientRect().width / 2;
