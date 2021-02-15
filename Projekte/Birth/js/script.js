@@ -36,12 +36,19 @@ $('.mode').click(function() {
 function show1() {
     var tages = document.getElementById("two-1");
     var textTages = document.getElementById("Tagesübersicht");
-    var besonderes = document.getElementById("two-2");
+    var top = document.getElementById("two-2");
+    var textTop = document.getElementById("Top");
+    var besonderes = document.getElementById("two-3");
     var textBesonderes = document.getElementById("Besonderes");
     if (tages.checked == true) {
         textTages.style.display = "block";
     } else {
         textTages.style.display = "none";
+    }
+    if (top.checked == true) {
+        textTop.style.display = "block";
+    } else {
+        textTop.style.display = "none";
     }
     if (besonderes.checked == true) {
         textBesonderes.style.display = "block";

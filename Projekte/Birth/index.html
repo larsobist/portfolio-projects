@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Birth</title>
+    <title>24/7</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -20,19 +20,23 @@
 <body>
     <div class="background"></div>
     <div class="wrapper">
-        <div id="darkModeToggle">
+        <!-- <div id="darkModeToggle">
             <div class="mode"></div>
-        </div>
+        </div> -->
         <div class="container">
             <ul>
                 <li>
                     <div class="bereich">
+                        <div style="height: 200px"></div>
                         <div class="glass backGlass">
                             <h1 id="title">85.386.227</h1>
-                            <!-- <h1> Geburten</h1>
-                            In den USA über 21 Jahre verteilt. -->
-                            <div class="onGlass"> </div>
+                            <h1> Geburten</h1>
+                            <div id="untertitel"></div>
+                            <h3>Wie verteilen sie sich?</h3>
+                            <h3>Wie beliebt ist dein Geburtstag?</h3>
                         </div>
+                        <!-- <div class="onGlass"> </div> -->
+
                     </div>
                 </li>
                 <li>
@@ -42,7 +46,9 @@
                                 <input id="two-1" name="two" type="radio" onclick=show1() checked>
                                 <label for="two-1">Tagesübersicht</label>
                                 <input id="two-2" name="two" type="radio" onclick=show1()>
-                                <label for="two-2">Besondere Hervorhebungen</label>
+                                <label for="two-2">Top 10</label>
+                                <input id="two-3" name="two" type="radio" onclick=show1()>
+                                <label for="two-3">Besonderheiten</label>
                             </div>
                             <div class="contentBox" id="Tagesübersicht">
                                 <h2> Tagesübersicht</h2>
@@ -50,14 +56,265 @@
                                     <div id="chart"></div>
                                 </div>
                             </div>
-                            <div class="contentBox noShow" id="Besonderes">
-                                <h2> Besonderes</h2>
+                            <div class="contentBox noShow" id="Top">
+                                <h2> 10 Tage, an denen die...</h2>
                                 <div class="onGlass">
-                                    <div id="chartTable"></div>
+                                    <div id="tableLeft">
+                                        <br> meisten Geburten stattfinden
+                                        <table>
+                                            <tr>
+                                                <th>Anzahl</th>
+                                                <th>Datum</th>
+                                                <th>Erzeugung*</th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.301</div>
+                                                </td>
+                                                <td>09.09.</td>
+                                                <td>13.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.229</div>
+                                                </td>
+                                                <td>19.09. </td>
+                                                <td>23.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.224</div>
+                                                </td>
+                                                <td> 12.09.</td>
+                                                <td> 16.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red"> 12.148</div>
+                                                </td>
+                                                <td> 17.09.</td>
+                                                <td>21.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red"> 12.143</div>
+                                                </td>
+                                                <td> 10.09.</td>
+                                                <td>14.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red"> 12.108</div>
+                                                </td>
+                                                <td> 07.07.</td>
+                                                <td>10.10.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.107</div>
+                                                </td>
+                                                <td> 20.09.</td>
+                                                <td>24.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.087 </div>
+                                                </td>
+                                                <td>15.09. </td>
+                                                <td>19.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.072 </div>
+                                                </td>
+                                                <td>16.09. </td>
+                                                <td>20.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.055</div>
+                                                </td>
+                                                <td>18.09. </td>
+                                                <td>22.12.</td>
+                                            </tr>
+                                            <!-- <tr>
+                                                <td>12.009 </td>
+                                                <td>20.12. </td>
+                                                <td>25.03.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11.993 </td>
+                                                <td>26.09. </td>
+                                                <td>30.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11.992 </td>
+                                                <td>08.09. </td>
+                                                <td>12.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11.974 </td>
+                                                <td>23.09. </td>
+                                                <td>27.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11.956 </td>
+                                                <td>29.12. </td>
+                                                <td>03.04.</td>
+                                            </tr> -->
+                                        </table>
+                                    </div>
+                                    <div id="tableRight">
+                                        <br> wenigsten Geburten stattfinden
+                                        <table>
+                                            <tr>
+                                                <th>Anzahl</th>
+                                                <th>Datum</th>
+                                                <th>Erzeugung*</th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">6.574 </div>
+                                                </td>
+                                                <td>25.12.</td>
+                                                <td>30.03.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">7.792</div>
+                                                </td>
+                                                <td>01.01. </td>
+                                                <td>06.04.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow"> 8.069</div>
+                                                </td>
+                                                <td> 24.12.</td>
+                                                <td>29.03.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">8.796</div>
+                                                </td>
+                                                <td> 04.07.</td>
+                                                <td>07.10.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">9.307</div>
+                                                </td>
+                                                <td> 02.01.</td>
+                                                <td>07.04.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">9.543</div>
+                                                </td>
+                                                <td> 26.12.</td>
+                                                <td>31.03.</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow"> 9.718</div>
+                                                </td>
+                                                <td> 27.11.</td>
+                                                <td>02.03.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">9.883 </div>
+                                                </td>
+                                                <td>23.11. </td>
+                                                <td>26.02.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">9.954 </div>
+                                                </td>
+                                                <td>25.11. </td>
+                                                <td>28.02.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">9.978 </div>
+                                                </td>
+                                                <td>31.10. </td>
+                                                <td>03.02.</td>
+                                            </tr>
+                                            <!-- <tr>
+                                                <td>10.015 </td>
+                                                <td>24.11. </td>
+                                                <td>27.02.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10.044 </td>
+                                                <td>26.11. </td>
+                                                <td>01.03.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10.096 </td>
+                                                <td>28.11. </td>
+                                                <td>03.03.</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>10.300 </td>
+                                                <td>01.04. </td>
+                                                <td>05.07.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10.338 </td>
+                                                <td>23.12. </td>
+                                                <td>28.03.</td>
+                                            </tr> -->
+                                        </table>
+                                    </div>
+                                    <div>Erzeugungsdatum ist schätzungsweise 270 Tage</div>
+                                </div>
+                            </div>
+                            <div class="contentBox noShow" id="Besonderes">
+                                <h2> Besonderheiten</h2>
+                                <div class="onGlass">
+
+                                    <div class="keyPoint" id="key1">
+                                        <div class="bulletPoint-ueberschrift">Herbst
+                                            <!-- <hr> -->
+                                        </div>
+                                        <div class="bulletPoint-text">
+                                            Im Herbst gibt es durchschnittlich mehr Geburten als zum Rest des Jahres. <br> Zählt man 280 Tage, also die durchschnittliche Zeit der Erzeugung des Kindes, kann man feststellen, dass viele Babys über die Feiertage
+                                            erzeugt wurden.
+                                        </div>
+                                    </div>
+
+                                    <div class="keyPoint" id="key2">
+                                        <div class="bulletPoint-ueberschrift">Feiertage
+                                            <!-- <hr> -->
+                                        </div>
+                                        <div class="bulletPoint-text">
+                                            Über die Weihnachtstage und Neujahr gibt es weniger Geburten. <br> An dem 04.07 (Unabhängigkeitstag der USA) und dem 31.10 (Halloween) sind ebenfalls weniger Geburten zu erkennen erkennen.
+                                        </div>
+                                    </div>
+                                    <div class="keyPoint" id="key3">
+                                        <div class="bulletPoint-ueberschrift">Aberglaube?
+                                            <!-- <hr> -->
+                                        </div>
+                                        <div class="bulletPoint-text">
+                                            An dem 13. jeden Monats ist erkennbar, dass weniger Geburten stattfinden als bei den restlichen Tagen des Monats.
+                                        </div>
+                                    </div>
+                                    <div class="keyPoint" id="key4">
+                                        <div class="bulletPoint-ueberschrift">Valentinstag
+                                            <!-- <hr> -->
+                                        </div>
+                                        <div class="bulletPoint-text">
+                                            An dem Valentinstag gibt es im Vergleich zu dem Zeitraum überdurchschnittlich viele Geburten.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </li>
                 <li>
                     <div class="bereich">
@@ -94,27 +351,32 @@
                 <li>
                     <div class="bereich">
                         <div class="glass backGlass">
-                            <h2> Zusammenfassung</h2>
-                            <div class="onGlass"></div>
+                            <h2> Credits</h2>
+                            <div class="onGlass">
+                                Datensätze spiegeln lediglich die Geburten aus den Vereinigten Staaten Amerikas über den Zeitraum von 21 Jahren. <br><br>
+                                <div id="credit">
+                                    Datenvisualisierung von <a href="https://larsobist.github.io/portfolio/" target="_blank"> Lars Obist</a> <br><br> Datensätze von <a href="https://github.com/fivethirtyeight/data/tree/master/births" target="_blank"> fivethirtyeight</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <footer>
+                    <!-- <footer>
                         <div class="legal-container">
                             &copy; Datenvisualisierung von <a href="https://larsobist.github.io/portfolio/" target="_blank"> Lars Obist</a> | Datensätze von <a href="https://github.com/fivethirtyeight/data/tree/master/births" target="_blank"> fivethirtyeight</a>
                         </div>
-                    </footer>
+                    </footer> -->
                 </li>
             </ul>
+            </div>
         </div>
-    </div>
-    <script src="./js/script.js"></script>
-    <script src='https://bundle.run/css-scroll-snap-polyfill@0.1.2'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js'></script>
-    <script src='https://cdn.jsdelivr.net/npm/apexcharts@3.4.1'></script>
-    <!-- <script src='https://cdn.jsdelivr.net/npm/apexcharts'></script> -->
-    <script src="./js/h1.js"></script>
-    <script src="./js/graph.js"></script>
-    <script src="./js/table.js"></script>
+        <script src="./js/script.js"></script>
+        <script src='https://bundle.run/css-scroll-snap-polyfill@0.1.2'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/npm/apexcharts@3.4.1'></script>
+        <!-- <script src='https://cdn.jsdelivr.net/npm/apexcharts'></script> -->
+        <script src="./js/h1.js"></script>
+        <script src="./js/graph.js"></script>
+        <script src="./js/table.js"></script>
 
 </body>
 

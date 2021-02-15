@@ -13,7 +13,8 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13pt;
+    font-size: 12pt;
+    line-height: 1.2;
 }
 
 .background {
@@ -48,6 +49,19 @@ body {
     margin-bottom: 20px;
     height: 40px;
 } */
+
+h3 {
+    /* margin-top: 100px; */
+    font-family: 'IBM Plex Sans';
+    width: 100%;
+    user-select: none;
+    line-height: 1em;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-weight: 350;
+    text-align: center;
+    font-size: 40pt;
+}
 
 .wrapper {
     display: -webkit-box;
@@ -98,7 +112,7 @@ section:nth-child(1) {
     position: absolute;
     width: 1000px;
     height: 650px;
-    left: -40px;
+    left: 0px;
     right: 0;
     z-index: 2;
     backdrop-filter: blur(5px);
@@ -115,8 +129,155 @@ section:nth-child(1) {
     -webkit-backdrop-filter: blur(5px);
     display: block;
     margin: 0 auto;
+    padding: 20px;
     width: 100%;
     height: calc(100% - 120px);
+}
+
+table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-spacing: 0 4px;
+    border-collapse: separate;
+}
+
+tr {
+    height: 25px;
+}
+
+td,
+th {
+    border: 1px solid transparent;
+    text-align: center;
+    align-items: center;
+    height: 20px;
+    width: 33%;
+    /* padding-top: 5px; */
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    border-style: none solid solid none;
+}
+
+#tableLeft td:first-child {
+    color: #fff;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    /* background-color: rgb(248, 79, 76, 1); */
+    background-color: rgb(248, 79, 76, 0.2);
+}
+
+#tableLeft td:nth-child(2) {
+    background-color: rgb(248, 79, 76, 0.2);
+}
+
+#tableLeft td:last-child {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: rgb(248, 79, 76, 0.2);
+}
+
+#tableRight td:first-child {
+    color: #000;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    background-color: rgb(253, 229, 185, 0.4);
+}
+
+#tableRight td:nth-child(2) {
+    background-color: rgb(253, 229, 185, 0.4);
+}
+
+#tableRight td:last-child {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: rgb(253, 229, 185, 0.4);
+}
+
+.red {
+    padding-top: 4px;
+    background-color: #F84F4C;
+    color: #fff;
+    height: 25px;
+    border-radius: 7px;
+}
+
+.yellow {
+    padding-top: 4px;
+    background-color: #FDE5B9;
+    color: #000;
+    height: 25px;
+    border-radius: 7px;
+}
+
+#tableLeft {
+    float: left;
+    width: 45%;
+    padding-right: 10px;
+    margin-left: 20px;
+}
+
+#tableRight {
+    float: right;
+    width: 45%;
+    padding-left: 10px;
+    margin-right: 20px;
+}
+
+.keyPoint {
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+}
+
+#key1,
+#key3 {
+    float: left;
+}
+
+#key2,
+#key4 {
+    float: right;
+}
+
+hr {
+    color: #FA9E70;
+    width: 40%;
+    height: 2px;
+}
+
+.bulletPoint-ueberschrift {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18pt;
+    font-weight: 600;
+}
+
+.bulletPoint-text {
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    text-align: left;
+    height: auto;
+    /* background-color: aqua; */
+    margin-bottom: 20px;
+}
+
+#besonderheiten li {
+    display: block;
+}
+
+#credit a {
+    color: #000;
+    font-weight: bold;
+}
+
+#credit a:visited {
+    color: #000;
 }
 
 footer {
