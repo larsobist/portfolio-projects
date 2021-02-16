@@ -225,7 +225,7 @@
  */
 
 .segmented-controls label:last-of-type::after {
-    background: rgb(255, 255, 255, 0.4);
+    background: rgb(255, 255, 255, 0.5);
     border-radius: 0.4275rem;
     border: 0.5px solid rgba(0, 0, 0, 0.04);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.04), 0px 3px 8px rgba(0, 0, 0, 0.12);

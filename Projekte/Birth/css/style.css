@@ -122,7 +122,7 @@ section:nth-child(1) {
 }
 
 .onGlass {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
@@ -203,7 +203,7 @@ td {
     padding-top: 4px;
     background-color: #F84F4C;
     color: #fff;
-    height: 25px;
+    height: 26px;
     border-radius: 7px;
 }
 
@@ -211,7 +211,7 @@ td {
     padding-top: 4px;
     background-color: #FDE5B9;
     color: #000;
-    height: 25px;
+    height: 26px;
     border-radius: 7px;
 }
 
@@ -245,17 +245,42 @@ td {
     float: right;
 }
 
-hr {
-    color: #FA9E70;
-    width: 40%;
-    height: 2px;
+.bulletPoint-ueberschrift {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-.bulletPoint-ueberschrift {
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 18pt;
+.bulletPoint-ueberschrift-inhalt {
+    background-color: aqua;
+    height: 30px;
+    width: 160px;
+    border-radius: 7px;
+    align-items: center;
+    font-size: 14pt;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+#key1 .bulletPoint-ueberschrift-inhalt {
+    background-color: #F84F4C;
+    color: #fff;
+}
+
+#key2 .bulletPoint-ueberschrift-inhalt {
+    background-color: #FDE5B9;
+    /* color: #fff; */
+}
+
+#key3 .bulletPoint-ueberschrift-inhalt {
+    background-color: #F96958;
+    color: #fff;
+}
+
+#key4 .bulletPoint-ueberschrift-inhalt {
+    background-color: #FFB97C;
+    /* color: #fff; */
 }
 
 .bulletPoint-text {
