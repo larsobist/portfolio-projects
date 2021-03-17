@@ -58,26 +58,33 @@ async function chartTable() {
                 show: false,
             },
         },
-        tooltip: {
-            x: {
-                show: true,
-            },
-        },
-
         // tooltip: {
-        //     custom: function({ series, seriesIndex, dataPointIndex, w }) {
-
-        //         return (
-        //             '<div class="arrow_box">' +
-        //             "<span>" +
-        //             w.globals.labels[dataPointIndex] + "." + series[seriesIndex][series.name] +
-        //             " Anzahl: " +
-        //             series[seriesIndex][dataPointIndex] +
-        //             "</span>" +
-        //             "</div>"
-        //         );
-        //     }
+        //     x: {
+        //         show: true,
+        //     },
         // },
+
+        tooltip: {
+            custom: function({ series, seriesIndex, dataPointIndex, w }) {
+
+                anzahl = series[seriesIndex][dataPointIndex]
+                console.log(anzahl)
+
+                function numberWithCommas(anzahl) {
+                    return anzahl.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                }
+
+                return (
+                    '<div class="tooltip">' +
+                    "<span>" +
+                    "Am " + w.globals.labels[dataPointIndex] + "." + w.config.series[seriesIndex].name +
+                    " gab es <br> durchschnittlich <br>" +
+                    numberWithCommas(anzahl) + " Geburten" +
+                    "</span>" +
+                    "</div>"
+                );
+            }
+        },
 
         dataLabels: {
             enabled: false,

@@ -38,6 +38,27 @@ async function chartWochentage() {
         yaxis: {
             show: false,
         },
+
+        tooltip: {
+            custom: function({ series, seriesIndex, dataPointIndex, w }) {
+                anzahl = series[seriesIndex][dataPointIndex]
+                console.log(anzahl)
+
+                function numberWithCommas(anzahl) {
+                    return anzahl.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                }
+
+                return (
+                    '<div class="tooltip">' +
+                    "<span>" +
+                    w.globals.labels[dataPointIndex] +
+                    "s gab es <br> durchschnittlich <br>" +
+                    numberWithCommas(anzahl) + " Geburten" +
+                    "</span>" +
+                    "</div>"
+                );
+            }
+        },
         fill: {
             type: "gradient",
             gradient: {
@@ -113,6 +134,26 @@ async function chartMonate() {
         yaxis: {
             show: false,
         },
+        tooltip: {
+            custom: function({ series, seriesIndex, dataPointIndex, w }) {
+                anzahl = series[seriesIndex][dataPointIndex]
+                console.log(anzahl)
+
+                function numberWithCommas(anzahl) {
+                    return anzahl.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                }
+
+                return (
+                    '<div class="tooltip">' +
+                    "<span>" +
+                    "Im " + w.globals.labels[dataPointIndex] +
+                    " gab es <br> durchschnittlich <br>" +
+                    numberWithCommas(anzahl) + " Geburten" +
+                    "</span>" +
+                    "</div>"
+                );
+            }
+        },
         fill: {
             type: "gradient",
             gradient: {
@@ -187,6 +228,26 @@ async function chartJahre() {
         }],
         yaxis: {
             show: false,
+        },
+        tooltip: {
+            custom: function({ series, seriesIndex, dataPointIndex, w }) {
+                anzahl = series[seriesIndex][dataPointIndex]
+                console.log(anzahl)
+
+                function numberWithCommas(anzahl) {
+                    return anzahl.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                }
+
+                return (
+                    '<div class="tooltip">' +
+                    "<span>" +
+                    "Im Jahr " + w.globals.labels[dataPointIndex] +
+                    " gab es <br> durchschnittlich <br>" +
+                    numberWithCommas(anzahl) + " Geburten" +
+                    "</span>" +
+                    "</div>"
+                );
+            }
         },
         fill: {
             type: "gradient",

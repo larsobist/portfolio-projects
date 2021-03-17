@@ -1,0 +1,13 @@
+@media(max-width:1050px) {
+    .backGlass {
+        width: 950px;
+        height: 600px;
+    }
+}
+
+@media(max-width:960px) {
+    .backGlass {
+        width: 750px;
+        height: 600px;
+    }
+}
