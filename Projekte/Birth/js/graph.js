@@ -4,7 +4,8 @@ async function chartWochentage() {
     const data = await getWochentageData();
     var week = {
         chart: {
-            height: 400,
+            // width: "100%",
+            height: "100%",
             type: "bar",
             // foreColor: '#6D6D6D',
             toolbar: {
@@ -18,7 +19,7 @@ async function chartWochentage() {
         dataLabels: {
             enabled: false
         },
-        colors: ['#F96958'],
+        // colors: ['#F96958'],
         series: [{
             name: "Anzahl",
             data: data.ys
@@ -39,10 +40,10 @@ async function chartWochentage() {
             show: false,
         },
 
+
         tooltip: {
             custom: function({ series, seriesIndex, dataPointIndex, w }) {
                 anzahl = series[seriesIndex][dataPointIndex]
-                console.log(anzahl)
 
                 function numberWithCommas(anzahl) {
                     return anzahl.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
@@ -116,7 +117,8 @@ async function chartMonate() {
 
     var month = {
         chart: {
-            height: 400,
+            // width: "100%",
+            height: "100%",
             type: "bar",
             // foreColor: '#6D6D6D',
             toolbar: {
@@ -126,7 +128,7 @@ async function chartMonate() {
         dataLabels: {
             enabled: false
         },
-        colors: ['#F96958'],
+        // colors: ['#F96958'],
         series: [{
             name: "Anzahl",
             data: data.ys
@@ -137,7 +139,6 @@ async function chartMonate() {
         tooltip: {
             custom: function({ series, seriesIndex, dataPointIndex, w }) {
                 anzahl = series[seriesIndex][dataPointIndex]
-                console.log(anzahl)
 
                 function numberWithCommas(anzahl) {
                     return anzahl.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
@@ -211,7 +212,8 @@ async function chartJahre() {
 
     var year = {
         chart: {
-            height: 400,
+            // width: "100%",
+            height: "100%",
             type: "bar",
             // foreColor: '#6D6D6D',
             toolbar: {
@@ -221,7 +223,7 @@ async function chartJahre() {
         dataLabels: {
             enabled: false
         },
-        colors: ['#F96958'],
+        // colors: ['#F96958'],
         series: [{
             name: "Anzahl",
             data: data.ys
@@ -232,7 +234,6 @@ async function chartJahre() {
         tooltip: {
             custom: function({ series, seriesIndex, dataPointIndex, w }) {
                 anzahl = series[seriesIndex][dataPointIndex]
-                console.log(anzahl)
 
                 function numberWithCommas(anzahl) {
                     return anzahl.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");

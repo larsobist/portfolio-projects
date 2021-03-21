@@ -15,6 +15,15 @@ body {
 }
 
 h2 {
+    font-family: "IBM Plex Sans", Times;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 28pt;
+}
+
+
+/* h2 {
     margin-top: 30px;
     margin-bottom: 20px;
     font-weight: 600;
@@ -22,7 +31,7 @@ h2 {
     font-variation-settings: 'wght' 100, 'wdth' 85;
     animation: breathe 8000ms infinite forwards;
     display: block;
-}
+} */
 
 
 /* @keyframes breathe {
