@@ -3,15 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>24/7</title>
+    <title>Circle of life</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/darkMode.css">
     <link rel="stylesheet" href="./css/segmentedControls.css">
-    <link rel="stylesheet" href="./css/h1.css">
-    <link rel="stylesheet" href="./css/h2.css">
+    <link rel="stylesheet" href="./css/ueberschriften.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/apexCharts.css">
 
 
@@ -28,16 +27,21 @@
             <ul>
                 <li>
                     <div class="bereich">
-                        <div style="height: 200px"></div>
                         <div class="glass backGlass">
-                            <h1 id="title">85.386.227</h1>
-                            <h1> Geburten</h1>
-                            <div id="untertitel"></div>
-                            <h3>Wie verteilen sie sich?</h3>
-                            <h3>Wie beliebt ist dein Geburtstag?</h3>
+                            <div id="start">
+                                <h2>Wie verteilen sie sich</h2>
+                                <h1 id="title">85.386.227</h1>
+                                <h3> Geburten?</h3>
+
+                                <h5>Eine Datenvisualisierung für</h5>
+                                <img src="./pic/circleOfLife.png" height="80px">
+                                <!-- <img src="./pic/fullCircleData.png" height="90px"> -->
+                                <!-- <img src="./pic/fullCirle.png" height="90px"> -->
+
+
+                            </div>
                         </div>
                         <!-- <div class="onGlass"> </div> -->
-
                     </div>
                 </li>
                 <li>
@@ -52,13 +56,13 @@
                                 <label for="two-3">Besonderheiten</label>
                             </div>
                             <div class="contentBox" id="Tagesübersicht">
-                                <h2> Tagesübersicht</h2>
+                                <h4> Tagesübersicht</h4>
                                 <div class="onGlass">
                                     <div id="chart"></div>
                                 </div>
                             </div>
                             <div class="contentBox noShow" id="Top">
-                                <h2> 10 Tage, an denen die...</h2>
+                                <h4> 10 Tage, an denen die...</h4>
                                 <div class="onGlass">
                                     <div id="tableLeft">
                                         meisten Geburten stattfinden
@@ -276,7 +280,7 @@
                                 </div>
                             </div>
                             <div class="contentBox noShow" id="Besonderes">
-                                <h2> Besonderheiten</h2>
+                                <h4> Besonderheiten</h4>
                                 <div class="onGlass">
 
                                     <div class="keyPoint" id="key1">
@@ -316,6 +320,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </li>
                 <li>
                     <div class="bereich">
@@ -329,19 +334,19 @@
                                 <label for="three-3">Jahresübersicht</label>
                             </div>
                             <div class="contentBox" id="Wochentagsübersicht">
-                                <h2> Wochentagsübersicht</h2>
+                                <h4> Wochentagsübersicht</h4>
                                 <div class="onGlass">
                                     <div id="chartWochentage" width="700px" height="400px"></div>
                                 </div>
                             </div>
                             <div class="contentBox noShow" id="Monatsübersicht">
-                                <h2> Monatsübersicht</h2>
+                                <h4> Monatsübersicht</h4>
                                 <div class="onGlass">
                                     <div id="chartMonate" width="700px" height="400px"></div>
                                 </div>
                             </div>
                             <div class="contentBox noShow" id="Jahresübersicht">
-                                <h2> Jahresübersicht</h2>
+                                <h4> Jahresübersicht</h4>
                                 <div class="onGlass">
                                     <div id="chartJahre" width="700px" height="400px"></div>
                                 </div>
@@ -352,32 +357,42 @@
                 <li>
                     <div class="bereich">
                         <div class="glass backGlass">
-                            <h2> Credits</h2>
-                            <div class="onGlass">
-                                Datensätze spiegeln lediglich die Geburten aus den Vereinigten Staaten Amerikas über den Zeitraum von 21 Jahren. <br><br>
-                                <div id="credit">
-                                    Datenvisualisierung von <a href="https://larsobist.github.io/portfolio/" target="_blank"> Lars Obist</a> <br><br> Datensätze von <a href="https://github.com/fivethirtyeight/data/tree/master/births" target="_blank"> fivethirtyeight</a>
+                            <h4> Abschließendes</h4>
+                            <!-- <div class="onGlass" id="endeOnGlass"> -->
+                            <div class="grid-container" id="ende">
+                                <div class="item1">
+                                    <img src="./pic/circleOfLife.png" height="120px" margin="20px">
+                                    <div id="text">Die Datenvisualisierung Circle of life zeigt über einen Zeitraum von insgesamt 21 Jahren die Entwicklung von den Geburtenzahlen. <br><br> Die angewandten Datensätze spiegeln lediglich die Geburten aus den Vereinigten
+                                        Staaten dar.
+                                    </div>
                                 </div>
+                                <div class="item2"><img src="./pic/lo_Logo.png" height="60px">
+                                    <div id="credit">
+                                        Eine Datenvisualisierung von <a href="https://larsobist.github.io/portfolio/" target="_blank"> Lars Obist</a>
+                                    </div>
+                                </div>
+                                <div class="item3"><img src="./pic/fiveThirtyEightLogo.png" height="55px">
+                                    <div id="credit">
+                                        <a href="https://github.com/fivethirtyeight/data/tree/master/births">Datensätze</a> von <a href="https://fivethirtyeight.com/" target="_blank"> FiveThirtyEight</a>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+
                             </div>
                         </div>
                     </div>
-                    <!-- <footer>
-                        <div class="legal-container">
-                            &copy; Datenvisualisierung von <a href="https://larsobist.github.io/portfolio/" target="_blank"> Lars Obist</a> | Datensätze von <a href="https://github.com/fivethirtyeight/data/tree/master/births" target="_blank"> fivethirtyeight</a>
-                        </div>
-                    </footer> -->
                 </li>
             </ul>
-            </div>
         </div>
-        <script src="./js/script.js"></script>
-        <script src='https://bundle.run/css-scroll-snap-polyfill@0.1.2'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js'></script>
-        <script src='https://cdn.jsdelivr.net/npm/apexcharts@3.4.1'></script>
-        <!-- <script src='https://cdn.jsdelivr.net/npm/apexcharts'></script> -->
-        <script src="./js/h1.js"></script>
-        <script src="./js/graph.js"></script>
-        <script src="./js/table.js"></script>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src='https://bundle.run/css-scroll-snap-polyfill@0.1.2'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/apexcharts@3.4.1'></script>
+    <!-- <script src='https://cdn.jsdelivr.net/npm/apexcharts'></script> -->
+    <script src="./js/h1.js"></script>
+    <script src="./js/graph.js"></script>
+    <script src="./js/table.js"></script>
 
 </body>
 
