@@ -30,6 +30,9 @@
     table {
         border-spacing: 0 2px;
     }
+    .item1 img {
+        height: 100px;
+    }
 }
 
 @media(max-width:820px) {
@@ -46,6 +49,9 @@
     .yellow {
         padding-top: 2px;
         height: 23px;
+    }
+    .item1 img {
+        height: 70px;
     }
 }
 
