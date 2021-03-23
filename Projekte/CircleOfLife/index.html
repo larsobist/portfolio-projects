@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Circle of life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/darkMode.css">
+    <link rel="stylesheet" href="./css/segmentedControls.css">
+    <link rel="stylesheet" href="./css/ueberschriften.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/apexCharts.css">
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="wrapper">
+        <!-- <div id="darkModeToggle">
+            <div class="mode"></div>
+        </div> -->
+        <div class="container">
+            <ul>
+                <li>
+                    <div class="bereich">
+                        <div class="glass backGlass">
+                            <div id="start">
+                                <h2>Wie verteilen sie sich</h2>
+                                <h1 id="title">85.386.227</h1>
+                                <h3> Geburten?</h3>
+
+                                <img src="./pic/circleOfLife.png" height="100px">
+                                <!-- <img src="./pic/fullCircleData.png" height="90px"> -->
+                                <!-- <img src="./pic/fullCirle.png" height="90px"> -->
+
+
+                            </div>
+                        </div>
+                        <!-- <div class="onGlass"> </div> -->
+                    </div>
+                </li>
+                <li>
+                    <div class="bereich">
+                        <div class="glass backGlass">
+                            <div class="segmented-controls">
+                                <input id="two-1" name="two" type="radio" onclick=show1() checked>
+                                <label for="two-1">overview</label>
+                                <input id="two-2" name="two" type="radio" onclick=show1()>
+                                <label for="two-2">top 10</label>
+                                <input id="two-3" name="two" type="radio" onclick=show1()>
+                                <label for="two-3">highlights</label>
+                            </div>
+                            <div class="contentBox" id="Tagesübersicht">
+                                <h4> overview</h4>
+                                <div class="onGlass">
+                                    <div id="chart"></div>
+                                </div>
+                            </div>
+                            <div class="contentBox noShow" id="Top">
+                                <h4> 10 days, with...</h4>
+                                <div class="onGlass">
+                                    <div id="tableLeft">
+                                        meisten Geburten stattfinden
+                                        <table>
+                                            <tr>
+                                                <th>count</th>
+                                                <th>date</th>
+                                                <th>conception*</th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.301</div>
+                                                </td>
+                                                <td>09.09.</td>
+                                                <td>13.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.229</div>
+                                                </td>
+                                                <td>19.09. </td>
+                                                <td>23.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.224</div>
+                                                </td>
+                                                <td> 12.09.</td>
+                                                <td> 16.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red"> 12.148</div>
+                                                </td>
+                                                <td> 17.09.</td>
+                                                <td>21.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red"> 12.143</div>
+                                                </td>
+                                                <td> 10.09.</td>
+                                                <td>14.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red"> 12.108</div>
+                                                </td>
+                                                <td> 07.07.</td>
+                                                <td>10.10.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.107</div>
+                                                </td>
+                                                <td> 20.09.</td>
+                                                <td>24.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.087 </div>
+                                                </td>
+                                                <td>15.09. </td>
+                                                <td>19.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.072 </div>
+                                                </td>
+                                                <td>16.09. </td>
+                                                <td>20.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="red">12.055</div>
+                                                </td>
+                                                <td>18.09. </td>
+                                                <td>22.12.</td>
+                                            </tr>
+                                            <!-- <tr>
+                                                <td>12.009 </td>
+                                                <td>20.12. </td>
+                                                <td>25.03.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11.993 </td>
+                                                <td>26.09. </td>
+                                                <td>30.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11.992 </td>
+                                                <td>08.09. </td>
+                                                <td>12.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11.974 </td>
+                                                <td>23.09. </td>
+                                                <td>27.12.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11.956 </td>
+                                                <td>29.12. </td>
+                                                <td>03.04.</td>
+                                            </tr> -->
+                                        </table>
+                                    </div>
+                                    <div id="tableRight">
+                                        wenigsten Geburten stattfinden
+                                        <table>
+                                            <tr>
+                                                <th>count</th>
+                                                <th>date</th>
+                                                <th>conception*</th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">6.574 </div>
+                                                </td>
+                                                <td>25.12.</td>
+                                                <td>30.03.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">7.792</div>
+                                                </td>
+                                                <td>01.01. </td>
+                                                <td>06.04.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow"> 8.069</div>
+                                                </td>
+                                                <td> 24.12.</td>
+                                                <td>29.03.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">8.796</div>
+                                                </td>
+                                                <td> 04.07.</td>
+                                                <td>07.10.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">9.307</div>
+                                                </td>
+                                                <td> 02.01.</td>
+                                                <td>07.04.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">9.543</div>
+                                                </td>
+                                                <td> 26.12.</td>
+                                                <td>31.03.</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow"> 9.718</div>
+                                                </td>
+                                                <td> 27.11.</td>
+                                                <td>02.03.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">9.883 </div>
+                                                </td>
+                                                <td>23.11. </td>
+                                                <td>26.02.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">9.954 </div>
+                                                </td>
+                                                <td>25.11. </td>
+                                                <td>28.02.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="yellow">9.978 </div>
+                                                </td>
+                                                <td>31.10. </td>
+                                                <td>03.02.</td>
+                                            </tr>
+                                            <!-- <tr>
+                                                <td>10.015 </td>
+                                                <td>24.11. </td>
+                                                <td>27.02.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10.044 </td>
+                                                <td>26.11. </td>
+                                                <td>01.03.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10.096 </td>
+                                                <td>28.11. </td>
+                                                <td>03.03.</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>10.300 </td>
+                                                <td>01.04. </td>
+                                                <td>05.07.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10.338 </td>
+                                                <td>23.12. </td>
+                                                <td>28.03.</td>
+                                            </tr> -->
+                                        </table>
+                                    </div>
+                                    <div>the conception date is estimatex 270 days prior</div>
+                                </div>
+                            </div>
+                            <div class="contentBox noShow" id="Besonderes">
+                                <h4> highlights</h4>
+                                <div class="onGlass">
+
+                                    <div class="keyPoint" id="key1">
+                                        <div class="bulletPoint-ueberschrift">
+                                            <div class="bulletPoint-ueberschrift-inhalt">Herbstfreude</div>
+                                        </div>
+                                        <div class="bulletPoint-text">
+                                            Im Herbst gibt es durchschnittlich mehr Geburten als zum Rest des Jahres. Zählt man rückwirkend 270 Tage zurück, kann man feststellen, dass viele Babys über die Feiertage erzeugt wurden.
+                                        </div>
+                                    </div>
+
+                                    <div class="keyPoint" id="key2">
+                                        <div class="bulletPoint-ueberschrift">
+                                            <div class="bulletPoint-ueberschrift-inhalt">Feiertage</div>
+                                        </div>
+                                        <div class="bulletPoint-text">
+                                            An Feiertagen gibt es weniger Geburten. <br> So sind über die Weihnachtstage, Neujahr, dem Unabhängigkeitstag der USA und Halloween weniger Geburten zu erkennen erkennen.
+                                        </div>
+                                    </div>
+
+                                    <div class="keyPoint" id="key3">
+                                        <div class="bulletPoint-ueberschrift">
+                                            <div class="bulletPoint-ueberschrift-inhalt">Tag der Liebe</div>
+                                        </div>
+                                        <div class="bulletPoint-text">
+                                            An dem Valentinstag gibt es im Vergleich zu dem Zeitraum überdurchschnittlich viele Geburten.
+                                        </div>
+                                    </div>
+                                    <div class="keyPoint" id="key4">
+                                        <div class="bulletPoint-ueberschrift">
+                                            <div class="bulletPoint-ueberschrift-inhalt">Aberglaube?</div>
+                                        </div>
+                                        <div class="bulletPoint-text">
+                                            An dem 13. jeden Monats ist erkennbar, dass weniger Geburten stattfinden als bei den restlichen Tagen des Monats.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bereich">
+                        <div class="glass backGlass">
+                            <div class="segmented-controls">
+                                <input id="three-1" name="three" type="radio" onclick=show2() checked>
+                                <label for="three-1">weekday</label>
+                                <input id="three-2" name="three" type="radio" onclick=show2()>
+                                <label for="three-2">month</label>
+                                <input id="three-3" name="three" type="radio" onclick=show2()>
+                                <label for="three-3">year</label>
+                            </div>
+                            <div class="contentBox" id="Wochentagsübersicht">
+                                <h4> weekday</h4>
+                                <div class="onGlass">
+                                    <div id="chartWochentage" width="700px" height="400px"></div>
+                                </div>
+                            </div>
+                            <div class="contentBox noShow" id="Monatsübersicht">
+                                <h4> month</h4>
+                                <div class="onGlass">
+                                    <div id="chartMonate" width="700px" height="400px"></div>
+                                </div>
+                            </div>
+                            <div class="contentBox noShow" id="Jahresübersicht">
+                                <h4> year</h4>
+                                <div class="onGlass">
+                                    <div id="chartJahre" width="700px" height="400px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bereich">
+                        <div class="glass backGlass">
+                            <!-- <h4> Abschließendes</h4> -->
+                            <!-- <div class="onGlass" id="endeOnGlass"> -->
+                            <div class="grid-container" id="ende">
+                                <div class="item1">
+                                    <img src="./pic/circleOfLife.png" height="200px" margin="20px">
+                                    <div id="text">Die Datenvisualisierung Circle of life zeigt über einen Zeitraum von insgesamt 21 Jahren die Entwicklung von den Geburtenzahlen. <br><br> Die angewandten Datensätze spiegeln lediglich die Geburten aus den Vereinigten
+                                        Staaten Amerikas dar.
+                                    </div>
+                                </div>
+                                <div class="item2"><img src="./pic/lo_Logo.png" height="60px">
+                                    <div id="credit">
+                                        Designed by <a href="https://larsobist.github.io/portfolio/" target="_blank"> Lars Obist</a>
+                                    </div>
+                                </div>
+                                <div class="item3"><img src="./pic/fiveThirtyEightLogo.png" height="55px">
+                                    <div id="credit">
+                                        Data from <a href="https://fivethirtyeight.com/" target="_blank"> FiveThirtyEight</a>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src='https://bundle.run/css-scroll-snap-polyfill@0.1.2'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/apexcharts@3.4.1'></script>
+    <!-- <script src='https://cdn.jsdelivr.net/npm/apexcharts'></script> -->
+    <script src="./js/h1.js"></script>
+    <script src="./js/graph.js"></script>
+    <script src="./js/table.js"></script>
+
+</body>
+
+</html>

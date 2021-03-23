@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85648/IBMPlexSansVar-Roman.ttf");
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+    user-select: none;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: #f0f0f0;
+    /* background: linear-gradient(34deg, #FFA500 15%, #F14444 45%, #D53567 55%, #9A109A 95%); */
+    /* background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%); */
+    background-image: url('../pic/mesh-gradient-2.png');
+    /* background-image: url('../pic/mesh-gradient-2-10.png');
+    background-image: url('../pic/mesh-gradient-2-15.png');
+    background-image: url('../pic/mesh-gradient-2-20.png');
+    background-image: url('../pic/mesh-gradient-2-25.png'); */
+    background-size: cover;
+    background-position: center 30%;
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: flex;
+}
+
+.container {
+    flex-basis: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+}
+
+li {
+    scroll-snap-align: start;
+    position: relative;
+}
+
+section:nth-child(1) {
+    height: 100vh;
+}
+
+.bereich {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    display: block;
+    margin: 0 auto;
+}
+
+.backGlass {
+    position: absolute;
+    width: 1000px;
+    height: 650px;
+    left: 0px;
+    right: 0;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 40px;
+    text-align: center;
+}
+
+.onGlass {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 125px);
+}
+
+#start {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-spacing: 0 4px;
+    border-collapse: separate;
+}
+
+tr {
+    height: 25px;
+}
+
+td,
+th {
+    border: 1px solid transparent;
+    text-align: center;
+    align-items: center;
+    height: 20px;
+    width: 33%;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    border-style: none solid solid none;
+}
+
+#tableLeft td:first-child {
+    color: #fff;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    /* background-color: rgb(248, 79, 76, 1); */
+    background-color: rgb(248, 79, 76, 0.2);
+}
+
+#tableLeft td:nth-child(2) {
+    background-color: rgb(248, 79, 76, 0.2);
+}
+
+#tableLeft td:last-child {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: rgb(248, 79, 76, 0.2);
+}
+
+#tableRight td:first-child {
+    color: #000;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    background-color: rgb(253, 229, 185, 0.4);
+}
+
+#tableRight td:nth-child(2) {
+    background-color: rgb(253, 229, 185, 0.4);
+}
+
+#tableRight td:last-child {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: rgb(253, 229, 185, 0.4);
+}
+
+.red {
+    padding-top: 4px;
+    background-color: #F84F4C;
+    color: #fff;
+    height: 26px;
+    border-radius: 7px;
+}
+
+.yellow {
+    padding-top: 4px;
+    background-color: #FDE5B9;
+    color: #000;
+    height: 26px;
+    border-radius: 7px;
+}
+
+#tableLeft {
+    float: left;
+    width: 45%;
+    padding-right: 10px;
+    margin-left: 20px;
+}
+
+#tableRight {
+    float: right;
+    width: 45%;
+    padding-left: 10px;
+    margin-right: 20px;
+}
+
+.keyPoint {
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+}
+
+#key1,
+#key3 {
+    float: left;
+}
+
+#key2,
+#key4 {
+    float: right;
+}
+
+.bulletPoint-ueberschrift {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.bulletPoint-ueberschrift-inhalt {
+    height: 30px;
+    width: 160px;
+    border-radius: 7px;
+    align-items: center;
+    font-size: 14pt;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+#key1 .bulletPoint-ueberschrift-inhalt {
+    background-color: #F84F4C;
+    color: #fff;
+}
+
+#key2 .bulletPoint-ueberschrift-inhalt {
+    background-color: #FDE5B9;
+    /* color: #fff; */
+}
+
+#key3 .bulletPoint-ueberschrift-inhalt {
+    background-color: #F96958;
+    color: #fff;
+}
+
+#key4 .bulletPoint-ueberschrift-inhalt {
+    background-color: #FFB97C;
+    /* color: #fff; */
+}
+
+.bulletPoint-text {
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    text-align: left;
+    height: auto;
+    /* background-color: aqua; */
+    margin-bottom: 20px;
+}
+
+#besonderheiten li {
+    display: block;
+}
+
+#ende {
+    /* background-color: aqua; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+#endeOnGlass {
+    height: calc(100% - 95px);
+}
+
+.item1 {
+    grid-area: top;
+}
+
+.item1 #text {
+    /* margin: 0 20% 0 20%; */
+    margin: 40px;
+}
+
+.item2 {
+    grid-area: left;
+}
+
+.item3 {
+    grid-area: right;
+}
+
+.item3 img {
+    margin-bottom: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'top top' 'left right';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container>div {
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+}
+
+#credit {
+    margin-top: 10px;
+}
+
+#credit a {
+    color: #000;
+    font-weight: bold;
+}
+
+#credit a:visited {
+    color: #000;
+}
+
+
+/* Hide div */
+
+.contentBox {
+    height: 100%
+}
+
+.noShow {
+    display: none;
+}
