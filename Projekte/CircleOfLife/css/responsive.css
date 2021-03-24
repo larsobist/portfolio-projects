@@ -58,6 +58,7 @@
     }
     .item1 #text {
         margin: 20px;
+        padding: 0;
     }
 }
 
