@@ -52,9 +52,9 @@ async function chartWochentage() {
                 return (
                     '<div class="tooltip">' +
                     "<span>" +
-                    "On " + w.globals.labels[dataPointIndex] +
-                    "s <br> there was an average <br> of " +
-                    numberWithCommas(anzahl) + " births" +
+                    "On <a>" + w.globals.labels[dataPointIndex] +
+                    "s </a> there <br>have been <a>" +
+                    numberWithCommas(anzahl) + "</a><br> births on average" +
                     "</span>" +
                     "</div>"
                 );
@@ -147,9 +147,9 @@ async function chartMonate() {
                 return (
                     '<div class="tooltip">' +
                     "<span>" +
-                    "In " + w.globals.labels[dataPointIndex] +
-                    " there <br> was an average <br> of " +
-                    numberWithCommas(anzahl) + " births" +
+                    "In <a>" + w.globals.labels[dataPointIndex] +
+                    "</a> there <br> have been <a>" +
+                    numberWithCommas(anzahl) + "</a><br> births on average" +
                     "</span>" +
                     "</div>"
                 );
@@ -242,9 +242,9 @@ async function chartJahre() {
                 return (
                     '<div class="tooltip">' +
                     "<span>" +
-                    "In " + w.globals.labels[dataPointIndex] +
-                    " there <br> was an average <br> of " +
-                    numberWithCommas(anzahl) + " births" +
+                    "In <a>" + w.globals.labels[dataPointIndex] +
+                    "</a> there <br>have been <a>" +
+                    numberWithCommas(anzahl) + "</a><br> births in total" +
                     "</span>" +
                     "</div>"
                 );

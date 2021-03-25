@@ -71,9 +71,9 @@ async function chartTable() {
                 return (
                     '<div class="tooltip">' +
                     "<span>" +
-                    "The date " + w.globals.labels[dataPointIndex] + "/" + w.config.series[seriesIndex].name +
-                    "<br> had " +
-                    numberWithCommas(anzahl) + " births <br> on average" +
+                    "On <a>" + w.globals.labels[dataPointIndex] + "/" + w.config.series[seriesIndex].name +
+                    "</a> there <br> have been <a>" +
+                    numberWithCommas(anzahl) + "</a><br> births on average" +
                     "</span>" +
                     "</div>"
                 );

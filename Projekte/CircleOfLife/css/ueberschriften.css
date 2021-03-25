@@ -50,6 +50,7 @@ h2 {
     font-weight: 350;
     text-align: center;
     font-size: 35pt;
+    margin-bottom: 30px;
 }
 
 
@@ -61,9 +62,13 @@ h3 {
     user-select: none;
     line-height: 1em;
     margin-bottom: 50px;
-    font-weight: 450;
+    font-weight: 400;
     text-align: center;
-    font-size: 60pt;
+    font-size: 45pt;
+}
+
+h3 a {
+    font-weight: 550;
 }
 
 
