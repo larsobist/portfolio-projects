@@ -21,6 +21,16 @@ h1 {
     font-size: 100pt;
 }
 
+h1 span {
+    /* transform: translateY(-10px); */
+    user-select: none;
+}
+
+h1.flex {
+    /* display: flex; */
+    justify-content: space-between;
+}
+
 h1.stroke span {
     position: relative;
     color: #211D26;
