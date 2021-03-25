@@ -21,22 +21,17 @@
 }
 
 #chart .apexcharts-tooltip {
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
-    background-color: rgb(255, 255, 255, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.2);
     transform: translateX(-40px) translateY(30px);
-    overflow: visible !important;
-    white-space: normal !important;
 }
 
+#chart .apexcharts-tooltip,
 #chartMonate .apexcharts-tooltip,
 #chartWochentage .apexcharts-tooltip,
 #chartJahre .apexcharts-tooltip {
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
-    background-color: rgb(255, 255, 255, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    background-color: rgb(255, 255, 255, 0.6)!important;
+    border: 1px solid rgba(255, 255, 255, 0.2)!important;
     overflow: visible !important;
     white-space: normal !important;
 }
