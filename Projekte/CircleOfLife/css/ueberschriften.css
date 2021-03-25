@@ -11,6 +11,9 @@
 h1 {
     font-family: 'IBM Plex Sans';
     text-rendering: optimizeSpeed;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     line-height: 1em;
     margin: 0 auto;
@@ -23,6 +26,9 @@ h1 {
 
 h1 span {
     /* transform: translateY(-10px); */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
@@ -54,6 +60,9 @@ h1.stroke span:after {
 h2 {
     font-family: 'IBM Plex Sans';
     width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     line-height: 1em;
     margin: 0 auto;
@@ -69,6 +78,9 @@ h2 {
 h3 {
     font-family: 'IBM Plex Sans';
     width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     line-height: 1em;
     margin-bottom: 50px;

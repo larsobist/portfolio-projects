@@ -37,6 +37,7 @@
 #darkModeToggle {
     z-index: 3;
     height: 40px;
+    position: -webkit-sticky;
     position: sticky;
     display: flex;
     left: 20px;
@@ -111,22 +112,11 @@
 }
 
 .scaling:after {
+    -webkit-animation: scaleInner 0.5s ease forwards;
     animation: scaleInner 0.5s ease forwards;
 }
 
-@-moz-keyframes scaleInner {
-    50% {
-        transform: scale(1.2);
-    }
-}
-
 @-webkit-keyframes scaleInner {
-    50% {
-        transform: scale(1.2);
-    }
-}
-
-@-o-keyframes scaleInner {
     50% {
         transform: scale(1.2);
     }
