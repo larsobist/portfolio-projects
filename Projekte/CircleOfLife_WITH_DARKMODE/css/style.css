@@ -13,22 +13,25 @@ body {
     user-select: none;
 }
 
-
-/* background */
-
 .background {
     height: 100vh;
     width: 100vw;
     position: absolute;
-    background-color: #81FF72;
-    background-image: linear-gradient(132deg, #81FF72 0%, #ECFF4F 100%);
-    background-image: url('../pic/background.jpg');
+    background-color: #f0f0f0;
+    /* background: linear-gradient(34deg, #FFA500 15%, #F14444 45%, #D53567 55%, #9A109A 95%); */
+    /* background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%); */
+    background-image: url('../pic/mesh-gradient-1.jpg');
+    background-image: url('../pic/mesh-gradient-1-1.jpg');
+    /* background-image: url('../pic/mesh-gradient-1-2.jpg'); */
+    /* background-image: url('../pic/mesh-gradient-2.png'); */
+    /* background-image: url('../pic/mesh-gradient-2-10.png');
+    background-image: url('../pic/mesh-gradient-2-15.png');
+    background-image: url('../pic/mesh-gradient-2-20.png');
+    background-image: url('../pic/mesh-gradient-2-25.png'); */
     background-size: cover;
     background-position: center 30%;
 }
-
-
-/* hard scroll effect */
 
 .wrapper {
     display: flex;
@@ -62,9 +65,6 @@ section:nth-child(1) {
     justify-content: center;
     align-items: center;
 }
-
-
-/* glass effekt */
 
 .glass {
     background: rgba(255, 255, 255, 0.4);
@@ -102,9 +102,6 @@ section:nth-child(1) {
     height: calc(100% - 125px);
 }
 
-
-/* start view */
-
 #start {
     margin: 0;
     position: absolute;
@@ -112,9 +109,6 @@ section:nth-child(1) {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
-/* top 10 */
 
 table {
     margin-top: 10px;
@@ -211,9 +205,6 @@ td {
     margin-right: 20px;
 }
 
-
-/* special events */
-
 .keyPoint {
     width: 50%;
     height: 50%;
@@ -254,6 +245,7 @@ td {
 
 #key2 .bulletPoint-ueberschrift-inhalt {
     background-color: #ffe6b5;
+    /* color: #fff; */
 }
 
 #key3 .bulletPoint-ueberschrift-inhalt {
@@ -263,6 +255,7 @@ td {
 
 #key4 .bulletPoint-ueberschrift-inhalt {
     background-color: #ffb974;
+    /* color: #fff; */
 }
 
 .bulletPoint-text {
@@ -270,6 +263,7 @@ td {
     margin-right: 30px;
     text-align: left;
     height: auto;
+    /* background-color: aqua; */
     margin-bottom: 20px;
 }
 
@@ -277,10 +271,8 @@ td {
     display: block;
 }
 
-
-/* end view */
-
 #ende {
+    /* background-color: aqua; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -297,6 +289,7 @@ td {
 }
 
 .item1 #text {
+    /* margin: 0 20% 0 20%; */
     margin: 40px;
     padding: 0 20px 0 20px;
 }
@@ -315,13 +308,14 @@ td {
 
 .grid-container {
     display: grid;
-    grid-template-areas: 'top top''left right';
+    grid-template-areas: 'top top' 'left right';
     grid-gap: 10px;
     padding: 10px;
 }
 
 .grid-container>div {
     text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.8); */
 }
 
 #credit {
@@ -338,7 +332,7 @@ td {
 }
 
 
-/* Switch Hide div */
+/* Hide div */
 
 .contentBox {
     height: 100%

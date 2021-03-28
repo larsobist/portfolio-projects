@@ -1,0 +1,142 @@
+@font-face {
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/85648/IBMPlexSansVar-Roman.ttf');
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans';
+    text-rendering: optimizeSpeed;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 1em;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 350;
+    text-align: center;
+    font-size: 100pt;
+}
+
+h1 span {
+    /* transform: translateY(-10px); */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1.flex {
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+h1.stroke span {
+    position: relative;
+    /* color: #7f53b4; */
+    line-height: inherit;
+}
+
+h1.stroke span:after {
+    content: attr(data-char);
+    -webkit-text-stroke-width: 3px;
+    /* -webkit-text-stroke-color: #FE6730; */
+    position: absolute;
+    left: 0;
+    line-height: inherit;
+    color: transparent;
+    z-index: -1;
+}
+
+
+/* ############## */
+
+h2 {
+    font-family: 'IBM Plex Sans';
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 1em;
+    margin: 0 auto;
+    font-weight: 350;
+    text-align: center;
+    font-size: 35pt;
+    margin-bottom: 30px;
+}
+
+
+/* ############## */
+
+h3 {
+    font-family: 'IBM Plex Sans';
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 1em;
+    margin-bottom: 50px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 45pt;
+}
+
+h3 a {
+    font-weight: 550;
+}
+
+
+/* ############## */
+
+h4 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "IBM Plex Sans", Times;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 28pt;
+}
+
+
+/* h4 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 28pt;
+    font-variation-settings: 'wght' 100, 'wdth' 85;
+    animation: breathe 8000ms infinite forwards;
+    display: block;
+} */
+
+
+/* @keyframes breathe {
+    60% {
+        font-variation-settings: 'wght' 700, 'wdth' 100;
+    }
+    100% {
+        font-variation-settings: 'wght' 100, 'wdth' 85;
+    }
+} */
+
+
+/* ############## */
+
+
+/* h5 {
+    text-align: center;
+    font-family: "IBM Plex Sans", Times;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16pt;
+} */

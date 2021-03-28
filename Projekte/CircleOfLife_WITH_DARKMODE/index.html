@@ -5,32 +5,30 @@
     <meta charset="UTF-8">
     <title>Circle of life</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./pic/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./pic/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./pic/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./pic/favicon_io/site.webmanifest">
-
-    <!-- styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/darkMode.css">
     <link rel="stylesheet" href="./css/segmentedControls.css">
-    <link rel="stylesheet" href="./css/titles.css">
+    <link rel="stylesheet" href="./css/ueberschriften.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/charts.css">
-    <!-- font -->
+    <link rel="stylesheet" href="./css/apexCharts.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 </head>
 
 <body>
     <div class="background"></div>
     <div class="wrapper">
+        <!-- <div id="darkModeToggle">
+            <div class="mode"></div>
+        </div> -->
         <div class="container">
             <ul>
                 <li>
-                    <!-- front page -->
                     <div class="bereich">
                         <div class="glass backGlass">
                             <div id="start">
@@ -43,10 +41,8 @@
                     </div>
                 </li>
                 <li>
-                    <!-- days overview etc -->
                     <div class="bereich">
                         <div class="glass backGlass">
-                            <!-- menu switch -->
                             <div class="segmented-controls">
                                 <input id="two-1" name="two" type="radio" onclick=show1() checked>
                                 <label for="two-1">days overview</label>
@@ -55,14 +51,12 @@
                                 <input id="two-3" name="two" type="radio" onclick=show1()>
                                 <label for="two-3">special events</label>
                             </div>
-                            <!-- days chart -->
                             <div class="contentBox" id="Tagesübersicht">
                                 <h4>days overview</h4>
                                 <div class="onGlass">
                                     <div id="chart"></div>
                                 </div>
                             </div>
-                            <!-- top 10 -->
                             <div class="contentBox noShow" id="Top">
                                 <h4> 10 days, on which...</h4>
                                 <div class="onGlass">
@@ -230,7 +224,6 @@
                                     <div> *estimated conception date is 270 days prior</div>
                                 </div>
                             </div>
-                            <!-- special events -->
                             <div class="contentBox noShow" id="Besonderes">
                                 <h4> special events</h4>
                                 <div class="onGlass">
@@ -275,10 +268,8 @@
                     </div>
                 </li>
                 <li>
-                    <!-- other charts -->
                     <div class="bereich">
                         <div class="glass backGlass">
-                            <!-- menu switch -->
                             <div class="segmented-controls">
                                 <input id="three-1" name="three" type="radio" onclick=show2() checked>
                                 <label for="three-1">weekdays</label>
@@ -287,21 +278,18 @@
                                 <input id="three-3" name="three" type="radio" onclick=show2()>
                                 <label for="three-3">years</label>
                             </div>
-                            <!-- weekdays -->
                             <div class="contentBox" id="Wochentagsübersicht">
                                 <h4> weekdays overview</h4>
                                 <div class="onGlass">
                                     <div id="chartWochentage" width="700px" height="400px"></div>
                                 </div>
                             </div>
-                            <!-- months -->
                             <div class="contentBox noShow" id="Monatsübersicht">
                                 <h4> months overview</h4>
                                 <div class="onGlass">
                                     <div id="chartMonate" width="700px" height="400px"></div>
                                 </div>
                             </div>
-                            <!-- year -->
                             <div class="contentBox noShow" id="Jahresübersicht">
                                 <h4> years overview</h4>
                                 <div class="onGlass">
@@ -312,7 +300,6 @@
                     </div>
                 </li>
                 <li>
-                    <!-- end -->
                     <div class="bereich">
                         <div class="glass backGlass">
                             <div class="grid-container" id="ende">
@@ -341,13 +328,13 @@
             </ul>
         </div>
     </div>
-    <!-- script import -->
     <script src="./js/script.js"></script>
     <script src='https://bundle.run/css-scroll-snap-polyfill@0.1.2'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/apexcharts@3.4.1'></script>
-    <script src="./js/titleNumber.js"></script>
-    <script src="./js/charts.js"></script>
+    <script src="./js/h1.js"></script>
+    <script src="./js/graph.js"></script>
+    <script src="./js/table.js"></script>
 
 </body>
 

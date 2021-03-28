@@ -1,0 +1,46 @@
+.apexcharts-bar-series.apexcharts-plot-series .apexcharts-series path {
+    -webkit-clip-path: inset(0% 0% -11% 0% round 8px);
+    clip-path: inset(0% 0% -11% 0% round 8px);
+}
+
+#chart,
+#chartMonate,
+#chartWochentage,
+#chartJahre {
+    height: 100%;
+    width: 100%;
+}
+
+.tooltip {
+    padding: 5px;
+    font-size: 11pt;
+    line-height: 1.3;
+}
+
+.tooltip a {
+    font-weight: bold;
+}
+
+#chart .apexcharts-tooltip {
+    transform: translateX(-40px) translateY(30px);
+}
+
+#chart .apexcharts-tooltip,
+#chartMonate .apexcharts-tooltip,
+#chartWochentage .apexcharts-tooltip,
+#chartJahre .apexcharts-tooltip {
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    background-color: rgb(255, 255, 255, 0.6)!important;
+    border: 1px solid rgba(255, 255, 255, 0.2)!important;
+    overflow: visible !important;
+    white-space: normal !important;
+}
+
+#chart .apexcharts-tooltip span,
+#chartMonate .apexcharts-tooltip span,
+#chartWochentage .apexcharts-tooltip span,
+#chartJahre .apexcharts-tooltip span {
+    padding: 5px 10px;
+    display: inline-block;
+}

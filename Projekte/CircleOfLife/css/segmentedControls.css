@@ -1,31 +1,4 @@
-/*
- * Just for presentation 
- */
-
-
-/* body {
-    padding: 2rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    text-align: center;
-} */
-
-
-/* section {
-    margin: 0 auto;
-    max-width: 700px;
-    min-width: 380px;
-    width: 50vw;
-} */
-
-
-/* 
- * SEGMENTED CONTROLS LAYOUT
- */
-
-
-/*
- * Container
- */
+/* Container */
 
 .segmented-controls {
     display: flex;
@@ -35,9 +8,7 @@
 }
 
 
-/*
- * Vissualy hidden radiobuttons
- */
+/* Vissualy hidden radiobuttons */
 
 .segmented-controls input {
     position: absolute !important;
@@ -45,16 +16,9 @@
     width: 1px;
     overflow: hidden;
     clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
-    /* added line */
 }
-
-
-/* 
- * Labels need to be the same size
- */
 
 .segmented-controls label {
     grid-row: 1;
@@ -69,20 +33,12 @@
     transition: inherit;
 }
 
-
-/* 
- * Adjust z-index of last label since that contains 
- * the paddle that needs to go beneath all other labels 
- */
-
 .segmented-controls label:last-of-type {
     z-index: 1;
 }
 
 
-/*
- * Paddle 
- */
+/* Paddle  */
 
 .segmented-controls label:last-of-type::after {
     content: "";
@@ -92,14 +48,11 @@
     bottom: 0;
     left: 0;
     z-index: -2;
-    /* background-color: black; */
     transition: inherit;
 }
 
 
-/*
- * Move paddle depending on which option is selected
- */
+/*  Move paddle depending on which option is selected */
 
 .segmented-controls input:nth-last-of-type(2):checked~label:last-of-type::after {
     transform: translateX(-100%);
@@ -138,20 +91,7 @@
 }
 
 
-/*
- * IOS 13 Theme
- * Special thanks to https://www.figma.com/community/file/768365747273056340
- */
-
-
-/* body {
-    background: #f1f2f6;
-} */
-
-
-/*
- * Container
- */
+/* Container */
 
 .segmented-controls {
     border-radius: 0.5rem;
@@ -161,21 +101,13 @@
 }
 
 
-/*
- * Labels 
- */
+/* Labels  */
 
 .segmented-controls label {
     font-size: 0.8125rem;
-    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
     font-weight: 500;
     line-height: 1;
 }
-
-
-/*
- * Dividers
- */
 
 .segmented-controls label:not(:first-of-type)::before {
     content: "";
@@ -189,20 +121,10 @@
     transition: inherit;
 }
 
-
-/*
- * Selected option 
- */
-
 .segmented-controls input:checked+label {
     font-weight: 600;
     font-size: 0.875rem;
 }
-
-
-/*
- * Hide dividers before and after the selected option
- */
 
 .segmented-controls input:checked+label::before,
 .segmented-controls input:checked+label+input+label::before {
@@ -210,39 +132,10 @@
 }
 
 
-/*
- * Focus style for keyboard navigation
- */
-
-
-/* .segmented-controls:focus-within {
-  box-shadow: 0 0 0 0.2rem rgba(0, 122, 255, 0.75);
-} */
-
-
-/*
- * Paddle
- */
+/* Paddle */
 
 .segmented-controls label:last-of-type::after {
     background: rgb(255, 255, 255, 0.5);
-    border-radius: 0.4275rem;
-    border: 0.5px solid rgba(0, 0, 0, 0.04);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.04), 0px 3px 8px rgba(0, 0, 0, 0.12);
-}
-
-
-/* Dark Mode */
-
-.segmented-controls-dark {
-    border-radius: 0.5rem;
-    background: rgba(0, 0, 0, 0.3);
-    height: 2rem;
-    padding: 0.125rem;
-}
-
-.segmented-controls-dark label:last-of-type::after {
-    background: rgb(0, 0, 0, 0.4);
     border-radius: 0.4275rem;
     border: 0.5px solid rgba(0, 0, 0, 0.04);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.04), 0px 3px 8px rgba(0, 0, 0, 0.12);

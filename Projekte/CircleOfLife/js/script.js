@@ -1,37 +1,4 @@
-// Dark Mode  Switch
-
-$('.mode').click(function() {
-    $('body').toggleClass("dark");
-    $(this).toggleClass("off");
-
-    var toggl = $(this);
-    toggl.addClass('scaling');
-    setTimeout(function() {
-        toggl.removeClass('scaling');
-    }, 520);
-
-    $('.glass').toggleClass('darkMode');
-    $('.onGlass').toggleClass('darkMode');
-    $('.segmented-controls').toggleClass('segmented-controls-dark');
-    $('.background').toggleClass('background-dark');
-
-});
-
-// Hard Scroll
-
-// const gra = function(min, max) {
-//     return Math.random() * (max - min) + min;
-// };
-// const init = function() {
-//     let items = document.querySelectorAll("li");
-//     for (let i = 0; i < items.length; i++) {
-//         items[i].style.minHeight = gra(100, 100) + "vh";
-//     }
-//     // cssScrollSnapPolyfill();
-// };
-// init();
-
-// Switch Views
+// Switch Views - Segmented Control
 
 function show1() {
     var tages = document.getElementById("two-1");
