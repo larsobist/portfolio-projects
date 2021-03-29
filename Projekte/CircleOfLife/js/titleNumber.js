@@ -1,3 +1,6 @@
+// Ursprungsquelle: https://codepen.io/JuanFuentes/pen/rgXKGQ
+// Code wurde modifiziert
+
 var maxDist;
 var mouse = { x: 0, y: 0 };
 var cursor = {
@@ -121,11 +124,3 @@ var VFont = function() {
 }
 
 var txt = new VFont();
-// var gui = new dat.GUI();
-// gui.add(txt, 'flex').onChange(txt.set.bind(txt));
-// gui.add(txt, 'scale').onChange(txt.set.bind(txt));
-// gui.add(txt, 'alpha').onChange(txt.set.bind(txt));
-// gui.add(txt, 'stroke').onChange(txt.set.bind(txt));
-// gui.add(txt, 'width').onChange(txt.set.bind(txt));
-// gui.add(txt, 'weight').onChange(txt.set.bind(txt));
-// gui.add(txt, 'italic').onChange(txt.set.bind(txt));

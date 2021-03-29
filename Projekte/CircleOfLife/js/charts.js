@@ -1,3 +1,5 @@
+// Daten werden mit ApexCharts visualisiert
+
 //Tagesübersicht
 chartTable();
 async function chartTable() {
