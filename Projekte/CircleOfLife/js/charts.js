@@ -229,7 +229,8 @@ async function chartWochentage() {
 async function getWochentageData() {
     const xs = [];
     const ys = [];
-    const response = await fetch('./data/Wochentagdurchschnitt.csv');
+    const response = await
+    import ('./data/Wochentagdurchschnitt.csv');
     const wochentageData = await response.text();
 
     const table = wochentageData.split('\n');
