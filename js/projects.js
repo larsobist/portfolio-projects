@@ -1,5 +1,6 @@
 window.onload = function() {
     // Get the modal
+    var circleOfLifeModal = document.getElementById("circleOfLifeModal");
     var zphereModal = document.getElementById("zphereModal");
     var eatabroadModal = document.getElementById("eatabroadModal");
     var schildkroeteModal = document.getElementById("schildkroeteModal");
@@ -12,6 +13,7 @@ window.onload = function() {
     var throwbackModal = document.getElementById("throwbackModal");
 
     // Get the button that opens the modal
+    var circleOfLifeBtn = document.getElementById("circleOfLifeBtn");
     var zphereBtn = document.getElementById("zphereBtn");
     var eatabroadBtn = document.getElementById("eatabroadBtn");
     var schildkroeteBtn = document.getElementById("schildkroeteBtn");
@@ -34,8 +36,12 @@ window.onload = function() {
     var span7 = document.getElementsByClassName("close")[7];
     var span8 = document.getElementsByClassName("close")[8];
     var span9 = document.getElementsByClassName("close")[9];
+    var span10 = document.getElementsByClassName("close")[10];
 
     // When the user clicks the button, open the modal 
+    circleOfLifeBtn.onclick = function() {
+        circleOfLifeModal.style.display = "block";
+    }
     zphereBtn.onclick = function() {
         zphereModal.style.display = "block";
     }
@@ -69,38 +75,44 @@ window.onload = function() {
 
     // When the user clicks on <span> (x), close the modal
     span0.onclick = function() {
-        zphereModal.style.display = "none";
+        circleOfLifeModal.style.display = "none";
     }
     span1.onclick = function() {
-        eatabroadModal.style.display = "none";
+        zphereModal.style.display = "none";
     }
     span2.onclick = function() {
-        schildkroeteModal.style.display = "none";
+        eatabroadModal.style.display = "none";
     }
     span3.onclick = function() {
-        eshopModal.style.display = "none";
+        schildkroeteModal.style.display = "none";
     }
     span4.onclick = function() {
-        lagomModal.style.display = "none";
+        eshopModal.style.display = "none";
     }
     span5.onclick = function() {
-        portfolioModal.style.display = "none";
+        lagomModal.style.display = "none";
     }
     span6.onclick = function() {
-        runnershighModal.style.display = "none";
+        portfolioModal.style.display = "none";
     }
     span7.onclick = function() {
-        buildarModal.style.display = "none";
+        runnershighModal.style.display = "none";
     }
     span8.onclick = function() {
-        lastminuteModal.style.display = "none";
+        buildarModal.style.display = "none";
     }
     span9.onclick = function() {
+        lastminuteModal.style.display = "none";
+    }
+    span10.onclick = function() {
         throwbackModal.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
+        if (event.target == circleOfLifeModal) {
+            circleOfLifeModal.style.display = "none";
+        }
         if (event.target == zphereModal) {
             zphereModal.style.display = "none";
         }

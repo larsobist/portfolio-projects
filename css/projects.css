@@ -99,6 +99,10 @@
 
 /* Grid  */
 
+#item0 {
+    grid-area: big0;
+}
+
 #item1 {
     grid-area: big1;
 }
@@ -141,7 +145,7 @@
 
 .grid-container-mixed {
     display: grid;
-    grid-template-areas: 'big1 big1' 'left2 right3' 'big4 big4' 'left5 right6' 'left7 right8 ' 'left9 right10';
+    grid-template-areas: 'big0 big0' 'big1 big1' 'left2 right3' 'big4 big4' 'left5 right6' 'left7 right8 ' 'left9 right10';
     grid-gap: 10px;
     width: 100%;
 }
@@ -152,7 +156,7 @@
 
 @media (max-width:700px) {
     .grid-container-mixed {
-        grid-template-areas: 'big1' 'left2' 'right3' 'big4' 'left5' 'right6' 'left7' 'right8' 'left9' 'right10';
+        grid-template-areas: 'big0' 'big1' 'left2' 'right3' 'big4' 'left5' 'right6' 'left7' 'right8' 'left9' 'right10';
     }
 }
 
